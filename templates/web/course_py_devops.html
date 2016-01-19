@@ -1,0 +1,747 @@
+{% extends 'web/index.html' %}
+
+{% block page-content-container %}
+
+<div class="py-course-bg parallaxBg " style="background-position: 50% 16px;">
+  <div class="container container-below-navbar">
+      <div class="col-md-8 col-md-offset-2 " >
+          <h1 style="font-size: 100px;color:black">不会开发的运维</h1>
+          <hr/>
+          <h1 style="font-size: 100px">终将被淘汰!</h1>
+
+
+      </div>
+  </div>
+</div>
+
+
+
+<!--=== Content Part ===-->
+<div class="container content ">
+
+    <div class="title-v1" style="margin-top: 25px">
+        <h2>为何运维人员必须要学自动化开发?</h2>
+        <p>看看这两年内运维领域里最热的词吧,肯定是非”运维自动化”莫属,为何运维自动化这两年如此火热,
+            以至于每个公司都在 探讨如果实现自动化升级?其实运维自动化不是新名词、新技术,无非是对传统运维进行改造和升级罢了,
+            由于近几年互联网 移动和 PC 端的飞速发展,敏捷开发带来的业务频繁更新、上线、业务访问量的突发巨增对系统并发承受能力的巨大的考验等,
+            这些都给传统运维带来了极大的挑战,运维人员必须不断的思考如何满足如下问题?
+
+        </p>
+    </div>
+
+    <!--运维要考虑的问题 -->
+    <div class="row margin-bottom-30">
+        <div class="col-sm-6 sm-margin-bottom-50">
+            <div class="service-block-v8 bg-grey">
+                <i class="icon-rocket"></i>
+                <div class="service-block-desc">
+                    <h3>如何高效实现敏捷开发?</h3>
+                    <p>如何高效的适应业务的频繁更新、变更、上线、扩展? 如何配合开发部门实现代码的快速自动测试\自动部署\自动发布等持续集成要求?</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-6 sm-margin-bottom-20">
+            <div class="service-block-v8 bg-grey">
+                <i class="icon-bubbles"></i>
+                <div class="service-block-desc">
+                    <h3>如何实现业务并发运算能力的可伸缩式扩展? </h3>
+                    <p>在云时代火热的今天? 企业如何在最低成本的前提下有效利用公有或私有云来实现业务运算能力的高效可伸缩式扩展?</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row margin-bottom-30">
+        <div class="col-sm-6 sm-margin-bottom-50">
+            <div class="service-block-v8 bg-grey">
+                <i class="icon-rocket"></i>
+                <div class="service-block-desc">
+                    <h3>何时才能不再做救火队员?</h3>
+                    <p>如何实现运维人员从被动处理故障到故障预防和故障高度自愈的转换,不再傻傻的做救火队员和背黑锅专业户?</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-6 sm-margin-bottom-20">
+            <div class="service-block-v8 bg-grey">
+                <i class="icon-bubbles"></i>
+                <div class="service-block-desc">
+                    <h3>如何不断降低企业IT运营成本? </h3>
+                    <p>如何通过不断优化运维流程、自动化工具来降低运维成本,提高企业IT自动化水平,最大可能减少重复工作,降低企业IT运营成本?</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="title-v1" style="margin-top: 25px">
+        <h2>信不信由你!</h2>
+        <p>Well, believe or not,<strong>未来的趋势是运维的工作一定是高度自动化的</strong>,现在一个 10 人运维团队所做的事情,过几年可能<strong>只需要两三个人</strong>就能做的很好,再过3年,最多5年,<strong>单纯的运维工种将不复存在,</strong>替尔代之的是<strong>DevOps(即自动化运维工程师)</strong>,到那个时候,<strong>一个DveOps不会开发将是难以置信的</strong>,现在的运维从业者如果不尽快提高自身能力、改变对运维工作本质的认知,加入到运维自动化的变革升级浪潮中来,那么就请做好丢掉饭碗的准备。具体参见自动化大神Alex之前写过的文章<a href="http://3060674.blog.51cto.com/3050674/1598255">《普通运维人员就是秋后的蚂蚱!》</a>
+        </p>
+    </div>
+    <!--end 运维要考虑的问题 -->
+
+    <div class="title-v1" style="margin-top: 35px">
+        <h2>学了"老男孩的Python自动化开发课程",我能干点啥?</h2>
+        <p>Good question!  当你学好自动化开发之后,你不至是能写脚本了这么简单,你至少可以做下面的事情
+
+        </p>
+    </div>
+    <!--学了自动化能干什么-->
+    <div class="row">
+        <!--div class="col-md-6">
+            <img class="img-responsive" src="/static/img/make-decision.jpg" alt="">
+        </div -->
+        <div class="col-md-6 content-boxes-v3 padding-top-20">
+            <div class="clearfix margin-bottom-30">
+                <i class="icon-custom icon-md rounded-x icon-bg-u icon-line icon-trophy"></i>
+                <div class="content-boxes-in-v3">
+                    <h2 class="heading-sm">开发各种自动化工具,定制开发各种开源软件</h2>
+                    <p>比如你们公司的设备多的话得有 CMDB 吧?得有发布系统 吧?得有虚拟化 OpenStack 吧?得有监控吧?得有日志分析吧?这些东西很多时候可以选择用开源软件来完成,但是每个公司的业务不同会导致有不同的定制开发需求,如果具备一定的开发能力,你就可以进行二次开发了,如果开源软件用的不爽,那你还可以自己做一个哈!</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-6 content-boxes-v3 padding-top-20">
+            <div class="clearfix margin-bottom-30">
+                <i class="icon-custom icon-md rounded-x icon-bg-u icon-line icon-directions"></i>
+                <div class="content-boxes-in-v3">
+                    <h2 class="heading-sm">帮助评估和优化业务技术架构</h2>
+                    <p>其实在很多情况下普通的开发人员是不太关注业务的并发承载能力,业务访问质量的,他们更多关注于功能的实现,因此写出来的技术架构不一定是高效的,在代码本身性能很差的情况下,你无论做多少集群、配置多高性能的服务器都不能使你的业务访问速度变快,此时如果你具备开发能力,你就可以帮助评估技术架构是否合理, 哪里可以优秀,哪里可以做异步,哪里可以配置缓存,具备开发和架构设计及调优能力可是成为一个出色架构师的必须能力噢!</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-6 content-boxes-v3 padding-top-20">
+            <div class="clearfix margin-bottom-30">
+                <i class="icon-custom icon-md rounded-x icon-bg-u icon-line icon-bubbles"></i>
+                <div class="content-boxes-in-v3">
+                    <h2 class="heading-sm">开发公司的内部办公系统、CRM、网站、电子商城等</h2>
+                    <p>学会了自动化开发不代表你只能做IT自动化,你也可以去做纯开发的工作,帮助公司开发相应的业务系统,这样更能提升自己的工作价值呀! 为了让学生毕业后即能做自动化开发又能做纯软件开发,我们的课程将不仅限自动化开发领域,还包括网站等业务系统的开发知识.</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-6 content-boxes-v3 padding-top-20">
+
+            <div class="clearfix margin-bottom-30">
+                <i class="icon-custom icon-md rounded-x icon-bg-u icon-line icon-diamond"></i>
+                <div class="content-boxes-in-v3">
+                    <h2 class="heading-sm">做个全栈工程师</h2>
+                    <p>全栈就是指什么都能做的样子,为什么我们选择 PYTHON 做为自动化学习的语言,因为 Python 自己就是个全栈综合语言,能写后端、前端、GUI、科学运算、网络编程、大数据开发等等,掌握了这个工具利器,你就有能力成为一名全栈程序员啦! </p>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <!--end 学了自动化能干什么-->
+
+
+
+
+
+    <div class="row blog-page container-below-navbar" >
+        神算断
+    </div>
+
+</div>
+<!--end container-->
+
+<!--课程大纲-->
+ <div class="full-w-block">
+    <div class="container py-course-summary">
+
+        <div class="title-v1" style="margin-top: 25px;">
+            <h1 style="font-size: 50px">牛X不是吹的,课程大纲说了算!</h1>
+            <!--p style="color: white;">Well, believe or not,<strong>未来的趋势是运维的工作一定是高度自动化的</strong>,现在一个 10 人运维团队所做的事情,过几年可能<strong>只需要两三个人</strong>就能做的很好,再过3年,最多5年,<strong>单纯的运维工种将不复存在,</strong>替尔代之的是<strong>DevOps(即自动化运维工程师)</strong>,到那个时候,<strong>一个DveOps不会开发将是难以置信的</strong>,现在的运维从业者如果不尽快提高自身能力、改变对运维工作本质的认知,加入到运维自动化的变革升级浪潮中来,那么就请做好丢掉饭碗的准备。具体参见自动化大神Alex之前写过的文章<a href="http://3060674.blog.51cto.com/3050674/1598255">《普通运维人员就是秋后的蚂蚱!》</a>
+            </p-->
+        </div>
+
+        <!--知识点count-->
+        <div class="row">
+              <div class="col-sm-3 col-xs-6">
+                  <div class="counters">
+                      <span class="counter">6个月</span>
+                      <h4>课程周期</h4>
+                  </div>
+              </div>
+              <div class="col-sm-3 col-xs-6">
+                  <div class="counters">
+                      <span class="counter">250+</span>
+                      <h4>学时</h4>
+                  </div>
+              </div>
+              <div class="col-sm-3 col-xs-6">
+                  <div class="counters">
+                      <span class="counter">300+</span>
+                      <h4>知识点</h4>
+                  </div>
+              </div>
+              <div class="col-sm-3 col-xs-6">
+                  <div class="counters">
+                      <span class="counter">15+</span>
+                      <h4>企业实战案例</h4>
+                  </div>
+              </div>
+          </div>
+        <!--end 知识点count-->
+    </div>
+</div>
+
+<div class="container content ">
+
+    <!--课程大纲每行-->
+    <div class="row equal-height-columns margin-bottom-20">
+        <div class="col-md-6">
+            <!-- Grey Panel with Equal Height -->
+            <div class="panel panel-red equal-height-column" style="height: 220px;">
+                <div class="panel-heading">
+                    <h3 class="panel-title"><span class="icon-education-002"></span>疗程1</h3>
+                </div>
+                <div class="panel-body">
+                    <h4>Python开发基础(5周)</h4>
+                    <ul>
+                        <li>Python介绍,安装使用</li>
+                        <li>列表\元组\字典\集合等常用数据类型</li>
+                        <li>常用模块学习</li>
+                        <li>函数、迭代器、装饰器</li>
+                        <li>递归、迭代、反射</li>
+                        <li>面向对象编程</li>
+                        <li>模拟人生游戏开发</li>
+                    </ul>
+                </div>
+            </div>
+            <!-- End Grey Panel with Equal Height -->
+        </div>
+        <div class="col-md-6">
+            <!-- Red Panel with Equal Height -->
+            <div class="panel panel-aqua equal-height-column" style="height: 220px;">
+                <div class="panel-heading">
+                    <h3 class="panel-title"><i class="fa fa-tasks"></i>疗程2</h3>
+                </div>
+                <div class="panel-body">
+                    <h4>网络编程(5周) </h4>
+                    <ul>
+                        <li>Socket c/s编程、Twisted网络框架、Scrap网络爬虫开发</li>
+                        <li>多线程、多进程、协程gevent、select\poll\epoll</li>
+                        <li>生产者消费者模型</li>
+                        <li>分布式监控软件开发</li>
+                        <li>审计系统开发</li>
+                        <li>FTP服务器开发</li>
+                        <li>批量命令、文件分布工具</li>
+                    </ul>
+                </div>
+            </div>
+            <!-- End Red Panel with Equal Height -->
+        </div>
+    </div>
+    <!--end 课程大纲每行-->
+    <!--课程大纲每行-->
+    <div class="row equal-height-columns margin-bottom-20">
+        <div class="col-md-6">
+            <!-- Grey Panel with Equal Height -->
+            <div class="panel panel-orange equal-height-column" style="height: 220px;">
+                <div class="panel-heading">
+                    <h3 class="panel-title"><span class="icon-education-002"></span>疗程3</h3>
+                </div>
+                <div class="panel-body">
+                    <h4>Web基础开发(3周)</h4>
+                    <ul>
+                        <li>Html/CSS/JS基础</li>
+                        <li>Dom编程</li>
+                        <li>原生JS进阶</li>
+                        <li>Jquery/EasyUi/AngulaJS框架学习</li>
+                        <li>Ajax异步加载</li>
+                        <li>Highchart/Echart动态画图</li>
+                        <li>Bootstrap前端框架学习</li>
+                    </ul>
+                </div>
+            </div>
+            <!-- End Grey Panel with Equal Height -->
+        </div>
+        <div class="col-md-6">
+            <!-- Red Panel with Equal Height -->
+            <div class="panel panel-green equal-height-column" style="height: 220px;">
+                <div class="panel-heading">
+                    <h3 class="panel-title"><i class="fa fa-tasks"></i>疗程4</h3>
+                </div>
+                <div class="panel-body">
+                    <h4>算法&设计模式(1-2周) </h4>
+                    <p>算法是开发人员面试必考项目,虽然做自动化开发不经常涉及到算法相关知识,但是掌握常用算法和设计模式对于提高开发能力,优化软件架构,提高程序运行效率都有很大的帮助.</p>
+                    <ul>
+                        <li>冒泡、二叉树、哈希、拆半等各种常见排序和查找算法学习</li>
+                        <li>工厂模式、单例模式、享元模式、代理模式等常用设计模式学习</li>
+                    </ul>
+                </div>
+            </div>
+            <!-- End Red Panel with Equal Height -->
+        </div>
+    </div>
+    <!--end 课程大纲每行-->
+    <!--课程大纲每行-->
+    <div class="row equal-height-columns margin-bottom-20">
+        <div class="col-md-6">
+            <!-- Grey Panel with Equal Height -->
+            <div class="panel panel-yellow equal-height-column" style="height: 220px;">
+                <div class="panel-heading">
+                    <h3 class="panel-title"><span class="icon-education-002"></span>疗程5</h3>
+                </div>
+                <div class="panel-body">
+                    <h4>WEB开发进阶(4-5周)</h4>
+                    <ul>
+                        <li>MVC架构讲解</li>
+                        <li>自行开发一个WEB框架</li>
+                        <li>Django\Tornado\Flask\Bottle\WebPy框架学习</li>
+                        <li>Session\中件间\ORM\Cookie\Session\CSRF\FORM...学习</li>
+                        <li>Restful API接口规范学习</li>
+                        <li>权限管理后台开发</li>
+                        <li>开发BBS论坛,实现发贴,多级评论,文件上传等论坛常见功能</li>
+                        <li>开发仿WEB QQ聊天室,实现多人在线实时聊天</li>
+                    </ul>
+
+                </div>
+            </div>
+            <!-- End Grey Panel with Equal Height -->
+        </div>
+        <div class="col-md-6">
+            <!-- Red Panel with Equal Height -->
+            <div class="panel panel-sea equal-height-column" style="height: 220px;">
+                <div class="panel-heading">
+                    <h3 class="panel-title"><i class="fa fa-tasks"></i>疗程6</h3>
+                </div>
+                <div class="panel-body">
+                    <h4>项目实战(8周) </h4>
+                    <p>此阶段是由讲师根据多年企业工作经验总结设计的可在企业实际应用的实战项目,讲师将带领学员从需求讨论\项目设计\功能实现\代码优化\接口规范等方面逐渐将一个个实战项目开发出来,属于整套课程核心中的核心!</p>
+                    <ul>
+                        <li>购物商城开发</li>
+                        <li>主机管理+任务编排+运维审计堡垒机开发</li>
+                        <li>分布式类Nagios/Zabbix监控产品开发</li>
+                        <li>CMDB资产管理开发</li>
+                        <li>Docker自动化管理平台开发 / IP\DNS资源池管理平台开发(2选1) </li>
+                        <li>基于用户视角的网站访问质量监测分析平台开发</li>
+                        <li>OpenStack二次开发</li>
+
+                    </ul>
+                </div>
+            </div>
+            <!-- End Red Panel with Equal Height -->
+        </div>
+    </div>
+    <!--end 课程大纲每行-->
+
+    <div class="title-v1" style="margin-top: 25px">
+        <h2>说好的300+知识点呢? 注意,以上只是大纲!</h2>
+        <p>详细的课程表内容实在太多,放上来占10多页影响美观,就不再此展示了,需要者请直接联系老男孩教育客服获取!
+        </p>
+    </div>
+
+    <div class="title-v1" style="margin-top: 25px">
+        <h1>来看看实战案例展示吧!</h1>
+        <p>详细的课程表内容实在太多,放上来占10多页影响美观,就不再此展示了,需要者请直接联系老男孩教育客服获取!
+        </p>
+    </div>
+</div>
+<!--end container-->
+<!--end课程大纲-->
+
+<!--实战案例-->
+<!--一个案例-->
+<div class="container content">
+    <div class="row">
+        <div class="col-md-6">
+            <h2 class="title-v2">BBS论坛开发,仿照[抽屉新热榜]</h2>
+            <p>实现发贴,在线富文本编程帖子.</p>
+            <p>实现图片和文件上传</p>
+            <p>实现多级评论(就是评论建楼效果)</p>
+            <p>实现帖子置顶\下沉\点赞\显示浏览量</p>
+            <p>实现简单的权限管理和后台帖子管理</p>
+
+        </div>
+        <div class="col-md-6">
+            <img class="img-responsive" src="/static/img/course/py/bbs-img.png" alt="">
+        </div>
+    </div>
+</div><!--end 一个案例-->
+
+<!--一个案例-->
+<div class="bg-color-light">
+    <div class="container content">
+
+        <div class="row ">
+            <div class="col-md-6">
+                <img class="img-responsive" src="/static/img/course/py/bbs-img.png" alt="">
+            </div>
+            <div class="col-md-6">
+                <h2 class="title-v2">WEB聊天,仿照[WEB QQ]</h2>
+                <b style="color: black">通过本项目可锻炼学员在WEB开发中遇到的需要前后端实时交互需求的开发能力,尤其是前端开发能力</b>
+                <p>实现实时一对一聊天</p>
+                <p>实现实时群聊功能</p>
+                <p>实现文件和图片发送</p>
+                <p>实现表情发送</p>
+                <p>实时多人并发在线</p>
+                <p>实现离线新消息提醒</p>
+
+
+            </div>
+        </div>
+
+    </div>
+</div><!--end 一个案例-->
+
+<!--一个案例-->
+<div class="bg-color-aqua">
+    <div class="container content">
+
+        <div class="row ">
+
+            <div class="col-md-6">
+                <h2 class="title-v2">购物商城,仿照[京东商城]</h2>
+                <b style="color: black">通过本项目锻炼学员复杂网站的设计和开发能力</b>
+                <p>实现商品列表展示,商品详细页展示</p>
+                <p>实现用户将喜欢的商品加入购物车</p>
+                <p>实现按用户喜好进行智能推荐</p>
+                <p>实现结账功能</p>
+                <p>实现秒杀抢购功能</p>
+
+            </div>
+            <div class="col-md-6">
+                <img class="img-responsive" src="/static/img/course/py/bbs-img.png" alt="">
+            </div>
+        </div>
+
+    </div>
+</div><!--end 一个案例-->
+
+
+<!--一个案例-->
+<div class="">
+    <div class="container content">
+
+        <div class="row ">
+            <div class="col-md-6">
+                <img class="img-responsive" src="/static/img/course/py/bbs-img.png" alt="">
+            </div>
+            <div class="col-md-6">
+                <h2 class="title-v2">堡垒机+主机管理+CMDB,仿照[CrazyEye]</h2>
+                <b style="color: black">通过本项目提高学员的自动化平台的设计和开发能力,此项目可在企业中实际应用</b>
+                <p>实现用户权限管理</p>
+                <p>实现用户操作行为审计的纪录和审计</p>
+                <p>实现主机批量管理,批量执行命令和文件分发(参加SaltStack的设计思路)</p>
+                <p>开发CMDB中的资产管理功能,实现硬件信息自动收集\硬件变更的自动更新\硬件信息的自动发现等</p>
+
+
+            </div>
+        </div>
+
+    </div>
+</div><!--end 一个案例-->
+
+<!--一个案例-->
+<div class="bg-color-light-grey">
+    <div class="container content">
+
+        <div class="row ">
+            <div class="col-md-6">
+                <h2 class="title-v2" style="color: white">基于用户视角的网站访问质量监测分析平台</h2>
+                <b style="color: white">通过本项目提高学员的用户数据收集\后台分析\前端展示的开发和设计能力</b>
+                <p style="color: white">收集用户访问网站的信息,包括用户来源区域\打开网站的速度\网站加载各个环节的速度情况等并发送到公司分析平台</p>
+                <p style="color: white">对用户提交的数据按不同维度进行延时和实时分析,剔除无效数据,对极值数据进行降噪处理</p>
+                <p style="color: white">对分析后的数据进行前端展示\生成报表等</p>
+
+            </div>
+            <div class="col-md-6">
+                <img class="img-responsive" src="/static/img/course/py/bbs-img.png" alt="">
+            </div>
+
+        </div>
+
+    </div>
+</div><!--end 一个案例-->
+
+<!--一个案例-->
+<div class="">
+    <div class="container content">
+
+        <div class="row ">
+            <div class="col-md-6">
+                <img class="img-responsive" src="/static/img/course/py/bbs-img.png" alt="">
+            </div>
+            <div class="col-md-6">
+                <h2 class="title-v2">Docker自动化管理平台开发</h2>
+                <b style="color: black">通过本项目加强学员自动化平台开发能力及Docker的API的调用\Docker集群功能定制知识</b>
+                <p>实现通过WEB页面统一调度各设备上的Docker容器,包括容器的生成\销毁等</p>
+                <p>实现通过WEB页面管理Docker Registry</p>
+                <p>实现通过WEB页面管理和维护Dockerfile</p>
+                <p>实现通过WEB页面管理和调度Dcoker集群</p>
+
+            </div>
+        </div>
+
+    </div>
+</div><!--end 一个案例-->
+<!--一个案例-->
+<div class="bg-color-light-green">
+    <div class="container content">
+
+        <div class="row ">
+            <div class="col-md-6">
+                <h2 class="title-v2" >监控系统开发,仿照[Nagios + Zabbix]</h2>
+                <b >可以批量的给被监控主机添加\删除\修改监控服务</b>
+                <p >实现不同主机,不同服务的监控间隔及报警阈值不同</p>
+                <p >根据服务重要级别不同进行报警分级</p>
+                <p >对主机各服务的监控情况进行前端展示</p>
+                <p >对历史数据进行优化存储,参照RRDTOOL的存储思路</p>
+
+            </div>
+            <div class="col-md-6">
+                <img class="img-responsive" src="/static/img/course/py/bbs-img.png" alt="">
+            </div>
+
+        </div>
+
+    </div>
+</div><!--end 一个案例-->
+<!--一个案例-->
+<div class="">
+    <div class="container content">
+
+        <div class="row ">
+            <div class="col-md-6">
+                <img class="img-responsive" src="/static/img/course/py/bbs-img.png" alt="">
+            </div>
+            <div class="col-md-6">
+                <h2 class="title-v2">OpenStack二次开发</h2>
+                <b style="color: black">通过本项目使学员具备OpenStack进行2次开发的能力</b>
+                <p>OpenStack 架构讲解及使用</p>
+                <p>基于Django程序OpenStack Horizon的定制和修改 </p>
+                <p>基于 API 实现智能可伸缩私有云平台 </p>
+                <p>教授学生如何实现认证、计算、扩容、镜像管理以及虚拟机相关的所有操作</p>
+
+            </div>
+        </div>
+    </div>
+
+    <div class="title-v1" style="margin-top: 25px">
+        <h1>然而,这还并不是所有!</h1>
+        <p>以上只是本课程的主要实战项目, 还有一些小项目如FTP服务器\网络爬虫\舆情分析\权限管理平台等就不一一展示啦!</p>
+    </div>
+
+</div><!--end 一个案例-->
+
+<!--end 实战案例-->
+<!--鸡汤-->
+<div class="container content ">
+
+    <div class="title-v1" style="margin-top: 25px">
+        <h2>除了技术,还有诚意满满的心灵鸡汤!</h2>
+        <p>Alex的心灵鸡汤一直是本课程的一大特色,Alex工作多年,经历丰富,做过技术,做过销售,数次创业失败,做过50人+团队的CEO,去见过世界的大好河山,泡过各种肤色的妹子,Alex会经常在课上给大家分享自己的生活感悟\人生观\价值观\世界观等,我们坚信,做一个优秀的人不只要技术优秀,还要3观正确,有内涵\有素质,这也是为什么Alex坚持为大家分享鸡汤的原因!<br/><b>来吧!唱下这碗Alex精心熬制诚意满满的鸡汤上路吧.</b></p>
+
+    </div>
+</div>
+<!--end 鸡汤-->
+<!--听学员怎么说我们-->
+ <div class="full-w-block">
+    <div class="container py-course-summary">
+
+        <div class="title-v1" style="margin-top: 25px;">
+            <h1 style="font-size: 50px">听听老学员怎么说!</h1>
+            <p>老男孩Python课程自2013年开课以为,至今已培养了近千名学员(面授+网络),我们的学员几乎已遍布在所有能叫的出名字的互联网公司里,为各公司不断提高自动化水平贡献着自己的力量</p>
+        </div>
+    </div>
+</div>
+<div class="container content ">
+
+    <div class="title-v1" >
+        <p>为保护学员隐私,我们在这里不进行照片展示</p>
+    </div>
+
+
+    <!-- stu comment-->
+    <div class="row margin-bottom-40">
+        <div class="col-md-7">
+            <div id="testimonials-4" class="carousel slide testimonials testimonials-v2 testimonials-bg-default">
+                <div class="carousel-inner">
+                    <div class="item active">
+                        <p class="rounded-3x">
+                            其实我关注python学习已经1年多了，但是苦于自学没效率等原因进展缓慢。后来看到51CTO学院上的老男孩python自动化培训视频，觉得不错，2015年7月份就果断报了10期面授培训班，经过4个多月的学习，在alex老师风趣幽默的讲课方式下（每节课都有心灵鸡汤），以及深入浅出的讲解实际开源项目案例（CrazyEye和MadKing项目等），让我了解到运维工程师也可以做这么高大上的事；这几个开源项目，经过自己DIY后完全可以应用于公司线上应用，极大的提高了线上服务器的安全性，也极大的提高了工作效率。
+                        </p>
+                        <div class="testimonial-info">
+                            <span class="testimonial-author">
+                                王伟
+                                <em>爱慕内衣,自动化开发工程师,15K</em>
+                            </span>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <p class="rounded-3x">
+                            python是一块又笨又重的花岗岩,
+                            它没法给你money你也没法给你妹子,
+                            但它能成为你脚下台阶的毛料,
+                            你可以通过学习把不同的花岗岩砌成金字塔般的阶梯,
+                            它能让你站得更高、看得更远,
+                            但它还是不能给你money也不能给你妹子,
+                            你只能站在上面去找寻别人看不到的机会,
+                            因为还没对生活麻木绝望,
+                            因为还想着去改变点什么,
+                            所以我来了.....,
+                            从没指望能通过老男孩的课程升职加薪成为CEO啥的,
+                            更多是在不断发现自己的无知并且不断去填充的过程,
+                            虽然总觉得有点矫情，但我还是想感谢Alex,
+                            不管是他的鸡汤还是其他，都让我受益匪浅,
+                            最后祝福Alex和武sir能有情人终成亲兄弟,
+                            ps: 份子钱还是会给的.....</p>
+                        <div class="testimonial-info">
+                            <span class="testimonial-author">
+                                邓廷儒
+                                <em>某事业单位, 运维工程师,9.5K</em>
+                            </span>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <p class="rounded-3x">Justo odioDignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique facilisis into egestas.</p>
+                        <div class="testimonial-info">
+                            <span class="testimonial-author">
+                                Kate Davenport
+                                <em>Web Designer, Google Inc.</em>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="carousel-arrow">
+                    <a class="left carousel-control" href="#testimonials-4" data-slide="prev">
+                        <i class="fa fa-angle-left rounded-x"></i>
+                    </a>
+                    <a class="right carousel-control" href="#testimonials-4" data-slide="next">
+                        <i class="fa fa-angle-right rounded-x"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-5">
+            <div id="testimonials-4" class="carousel slide testimonials testimonials-v2">
+                <div class="carousel-inner">
+                    <div class="item ">
+                        <p class="rounded-4x">
+ 偶然一次公开课，让我了解到python，了解到python对于运维人员的价值，进而毫不犹豫的选择学习
+python，现在4个月过去了，收获颇丰，学会了python编程，心理充满了自豪感，对以后的运维生涯
+充满了自信，再也不必为自动化的到来而担心了，下面接着学python大数据相关的知识，继续为自己
+充能，随时迎接挑战。
+                        </p>
+                        <div class="testimonial-info">
+                            <span class="testimonial-author">
+                                张端阳
+                                <em>传智播客,自动化开发工程师,20K+.</em>
+                            </span>
+                        </div>
+                    </div>
+                    <div class="item active">
+                        <p class="rounded-4x">
+
+                            找工作时我经常被问到会不会python自动化，由于我除了shell外没有写过任何项目，因此错过了很多好的工作机会。我在51CTO上试听Alex老师的课程后，决定去报名上课。第一堂课记忆尤深：learn python, make friends, open minds！从入学到毕业，老师一步步引导我们学技术，做项目，同时组织线上线下的学习交流，在授课的同时，还把对技术，对生活的感悟与大家分享。一言以蔽之，整个学期坚持下去，收获很大。毕业之前，我换了一个工作，在一个银行的NMS系统做运维开发工作，收入也翻了一翻。感谢老师，同时，对自己投资，最终受益的是自己
+                        </p>
+                        <div class="testimonial-info">
+                            <span class="testimonial-author">
+                                王三金
+                                <em>金信润天,运维工程师, 12K</em>
+                            </span>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <p class="rounded-4x">
+                            在老男孩马上学完了python，说实话，原来也没有什么开发基础，以为学习会很难，可跟alex学的第一节课就被他的讲课风格给吸引了，把本来枯燥的学习过程用他特有的嬉笑怒骂方式给讲出来，很有吸引力，课堂气氛非常活跃，用他独有的风格引领大家一步步学习。并且课上讲的自动化运维项目也都是实际工作中能够马上用得着的项目，可以说只要认真学会拿过来稍微改改就可以用在自己公司，感谢alex，感谢老男孩培训。当然现在我觉得自己也就刚入门，但不影响我学习使用python的热情。套用一句话总结：人生苦短，我用Python
+                        </p>
+                        <div class="testimonial-info">
+                            <span class="testimonial-author">
+                                黄坤
+                                <em>普惠金融,运维工程师,15K.</em>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--end stu comment-->
+    <!--stu comment -->
+    <div class="row margin-bottom-40">
+        <div class="col-md-5">
+            <div id="testimonials-9" class="carousel slide testimonials testimonials-v2 testimonials-bg-default">
+                <div class="carousel-inner">
+                    <div class="item">
+                        <p>Dignissimos similique sunt in ducimus qui blanditiis praesentium voluptatum delvoe molestias..</p>
+                        <div class="testimonial-info">
+                            <span class="testimonial-author">
+                                Jeremy Asigner
+                                <em>Web Developer, Unify Theme.</em>
+                            </span>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <p>Dignissimos similique sunt in ducimus qui blanditiis praesentium voluptatum delvoe molestias..</p>
+                        <div class="testimonial-info">
+                            <span class="testimonial-author">
+                                User
+                                <em>Java Developer, Htmlstream</em>
+                            </span>
+                        </div>
+                    </div>
+                    <div class="item active">
+                        <p>Dignissimos similique sunt in ducimus qui blanditiis praesentium voluptatum delvoe molestias..</p>
+                        <div class="testimonial-info">
+                            <span class="testimonial-author">
+                                Kate Davenport
+                                <em>Web Designer, Google Inc.</em>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-7">
+            <div id="testimonials-8" class="carousel slide testimonials testimonials-v2 testimonials-bg-dark">
+                <div class="carousel-inner">
+                    <div class="item active">
+                        <p>Dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpaid est praesentium..</p>
+                        <div class="testimonial-info">
+                            <span class="testimonial-author">
+                                Jeremy Asigner
+                                <em>Web Developer, Unify Theme.</em>
+                            </span>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <p>Cras justo odio, dapibus ac facilisis into egestas. Dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupidinon..</p>
+                        <div class="testimonial-info">
+                            <span class="testimonial-author">
+                                Bootstrap :)
+                                <em>Java Developer, Htmlstream</em>
+                            </span>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <p>Justo odioDignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique facilisis into egestas.</p>
+                        <div class="testimonial-info">
+                            <span class="testimonial-author">
+                                Kate Davenport
+                                <em>Web Designer, Google Inc.</em>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="carousel-arrow">
+                    <a class="left carousel-control" href="#testimonials-8" data-slide="prev">
+                        <i class="fa fa-angle-left"></i>
+                    </a>
+                    <a class="right carousel-control" href="#testimonials-8" data-slide="next">
+                        <i class="fa fa-angle-right"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--end stu  comment -->
+
+
+
+</div>
+
+<!--end 听学员怎么说我们-->
+{% endblock %}

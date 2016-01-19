@@ -1,0 +1,35 @@
+/* Add here all your css styles (customizations) */
+.navbar-fixed-top-css{
+    position: fixed;
+}
+
+
+.default-nav-style-override {
+    min-height: 0px;
+    margin-bottom: 0px;
+    border: none ;
+}
+
+.container-below-navbar{
+
+    margin-top: 80px;
+}
+
+.py-course-bg  {
+	padding: 80px 0;
+	text-align: center;
+	position: relative;
+	margin-bottom: 20px;
+	background: url(/static/img/bg/py_course_bg.jpg) 50% 0 repeat fixed;
+
+}
+
+.py-course-bg .col-md-8 {
+    background: rgba(255,255,255,0.7);
+    padding-top: 70px;
+    padding-bottom: 70px;
+}
+
+.py-course-summary h1,.py-course-summary h2 ,.py-course-summary h3,.py-course-summary h4,.py-course-summary span ,.py-course-summary p{
+    color: #DDD;
+}

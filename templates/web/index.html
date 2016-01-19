@@ -1,0 +1,899 @@
+{% extends 'web/base.html' %}
+
+{% block page-container %}
+
+<div class="wrapper">
+    <!--=== Header ===-->
+    <div class="header navbar-fixed-top-css" style="width: 100%;">
+        <div class="container ">
+            <!-- Logo -->
+            <a class="logo"  href="index.html">
+                <img  style="margin: 11px 0;margin-left: -8px" src="/static/img/logo-gray-vertical.jpeg" alt="Logo">
+            </a>
+            <!-- End Logo -->
+
+            <!-- Topbar -->
+            <div class="topbar">
+                <ul class="loginbar pull-right">
+                    <li class="hoverSelector">
+                        <i class="fa fa-globe"></i>
+                        <a>Languages</a>
+                        <ul class="languages hoverSelectorBlock">
+                            <li class="active">
+                                <a href="#">English <i class="fa fa-check"></i></a>
+                            </li>
+                            <li><a href="#">Spanish</a></li>
+                            <li><a href="#">Russian</a></li>
+                            <li><a href="#">German</a></li>
+                        </ul>
+                    </li>
+                    <li class="topbar-devider"></li>
+                    <li><a href="page_faq.html">Help</a></li>
+                    <li class="topbar-devider"></li>
+                    <li><a href="page_login.html">Login</a></li>
+                </ul>
+            </div>
+            <!-- End Topbar -->
+
+            <!-- Toggle get grouped for better mobile display -->
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-responsive-collapse">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="fa fa-bars"></span>
+            </button>
+            <!-- End Toggle -->
+        </div><!--/end container-->
+
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <!--div class="collapse navbar-collapse mega-menu navbar-responsive-collapse " -->
+        <div class="navbar default-nav-style-override mega-menu navbar-fixed-top  collapse navbar-collapse navbar-responsive-collapse" >
+            <div class="container">
+                <ul class="nav navbar-nav  page-scroll">
+
+                    <li class="page-scroll">
+							<a href="{% url 'home_page' %}"><span data-hover="About">首页</span></a>
+						</li>
+										<!-- Home -->
+										<li class="dropdown">
+											<a href="javascript:void(0);" class="dropdown-toggle" data-toggle="dropdown">
+												课程
+											</a>
+											<ul class="dropdown-menu ">
+												<li><a href="index.html">Linux中高级运维工程师课程</a></li>
+												<li><a href="index.html">Linux运维高级架构师课程</a></li>
+												<li><a href="{% url 'course_py_devops' %}">Python自动化开发课程</a></li>
+												<li><a href="index.html">Python软件开发课程</a></li>
+												<li><a href="index.html">云计算开发课程</a></li>
+												<li><a href="index.html">大数据开发课程</a></li>
+                                            </ul>
+										</li>
+										<!-- End Home -->
+
+                    <!-- Pages -->
+                    <li class="dropdown">
+                        <a href="javascript:void(0);" class="dropdown-toggle" data-toggle="dropdown">
+                            免费资料
+                        </a>
+                        <ul class="dropdown-menu">
+                            <!-- About Pages -->
+
+                           <li><a href="shortcode_typo_general.html"><i class="fa fa-sort-alpha-asc"></i>Linux视频</a></li>
+                           <li><a href="shortcode_typo_general.html"><i class="fa fa-sort-alpha-asc"></i>Python视频</a></li>
+
+                        </ul>
+                    </li>
+                    <!-- End Pages -->
+
+                    <!-- 讲师 -->
+                    <li class="page-scroll">
+                        <a href="#teachers" >
+                            专家讲师
+                        </a>
+
+                    </li>
+                    <!-- End 讲师 -->
+                    <!-- 就业 -->
+                    <li class="page-scroll">
+                        <a href="#job-offer" >
+                            高薪就业
+                        </a>
+                    </li>
+                    <!-- End 就业 -->
+                    <!--li class="">
+                        <a href="javascript:void(0);" >
+                            学员作品
+                        </a>
+                    </li-->
+                     <!-- 问答 -->
+                    <li class="">
+                        <a href="javascript:void(0);" >
+                            问答
+                        </a>
+
+                    </li>
+                    <!-- End 问答 -->
+                     <!-- blog -->
+                    <li class="">
+                        <a href="javascript:void(0);" >
+                            官方博客
+                        </a>
+
+                    </li>
+                    <!-- End blog -->
+
+
+                    <li class="">
+                        <a href="javascript:void(0);" >
+                            开源贡献
+                        </a>
+
+                    </li>
+                    <!-- End 开源贡献 -->
+
+
+                    <li class="">
+                        <a href="javascript:void(0);" >
+                            关于我们
+                        </a>
+                    </li>
+                    <li class="">
+                        <a href="javascript:void(0);" >
+                            学员入口
+                        </a>
+                    </li>                    <!-- End  -->
+
+                </ul>
+            </div><!--/end container-->
+        </div><!--/navbar-collapse-->
+    </div>
+    <!--=== End Header ===-->
+
+
+    <div> <!--page content container-->
+    {% block page-content-container %}
+        <!--=== Content Part ===-->
+        <div class="container content ">
+
+            <div class="row blog-page container-below-navbar" >
+
+                <!-- Left Sidebar -->
+                <div class="col-md-9">
+
+
+                     <div class="blog-img">
+                            <div class="carousel slide carousel-v1" id="myCarousel"  style="margin-top: -10px">
+                                <div class="carousel-inner">
+                                    <div class="item active">
+                                        <img alt="" src="/static/img/14.jpg">
+                                        <div class="carousel-caption">
+                                            <p>Facilisis odio, dapibus ac justo acilisis gestinas.</p>
+                                        </div>
+                                    </div>
+                                    <div class="item">
+                                        <img alt="" src="/static/img/15.jpg">
+                                        <div class="carousel-caption">
+                                            <p>Cras justo odio, dapibus ac facilisis into egestas.</p>
+                                        </div>
+                                        </div>
+                                    <div class="item">
+                                        <img alt="" src="/static/img/18.jpg">
+                                        <div class="carousel-caption">
+                                            <p>Justo cras odio apibus ac afilisis lingestas de.</p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="carousel-arrow">
+                                    <a data-slide="prev" href="#myCarousel" class="left carousel-control">
+                                        <i class="fa fa-angle-left"></i>
+                                    </a>
+                                    <a data-slide="next" href="#myCarousel" class="right carousel-control">
+                                        <i class="fa fa-angle-right"></i>
+                                    </a>
+                                </div>
+                            </div>
+                     </div>
+
+
+            <!-- 课程 第一行-->
+            <div class="row margin-bottom-30" style="margin-top: 20px">
+                <h3 style="margin-left: 12px">核心必学课程</h3>
+                <div class="col-md-4">
+                    <div class="service">
+                        <i class="fa fa-compress service-icon"></i>
+                        <div class="desc">
+                            <h4>Linux中高级运维课程</h4>
+                            <p>世界上最NB的Linux课程,小白必学</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="service">
+                        <i class="fa fa-cogs service-icon"></i>
+                        <div class="desc">
+                            <h4>Python自动化开发课程</h4>
+                            <p>学期6个月,包括面向对象开发,网络编程,爬虫,WEB开发,监控系统,CMDB,Openstack定制开发等</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="service">
+                        <i class="fa fa-rocket service-icon"></i>
+                        <div class="desc">
+                            <h4>Linux架构师课程</h4>
+                            <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus ...</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div> <!-- end 课程 第一行-->
+            <!-- 课程 第二行-->
+            <div class="row margin-bottom-30">
+                <h3 style="margin-left: 12px">当下技术热门</h3>
+
+                <div class="col-md-4">
+                    <div class="service">
+                        <i class="fa fa-compress service-icon"></i>
+                        <div class="desc">
+                            <h4>大数据开发课程</h4>
+                            <p>世界上最NB的Linux课程,小白必学</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="service">
+                        <i class="fa fa-cogs service-icon"></i>
+                        <div class="desc">
+                            <h4>云计算专题工程师</h4>
+                            <p>学期6个月,包括面向对象开发,网...</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="service">
+                        <i class="fa fa-rocket service-icon"></i>
+                        <div class="desc">
+                            <h4>云计算开发</h4>
+                            <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus ...</p>
+                        </div>
+                    </div>
+                </div>
+            </div> <!-- end 课程 第二行-->
+
+
+
+            <!--讲师团队-->
+            <div id="teachers" class="headline margin-bottom-35"><h2>核心讲师团队</h2></div>
+            <div class="row">
+                    <!-- Team v2 -->
+                    <div class="col-md-3 col-sm-6">
+                        <div class="team-v2 no-margin-bottom">
+                            <img class="img-responsive" src="/static/img/team/team1.jpeg" alt="">
+                            <div class="inner-team">
+                                <h3>老男孩</h3>
+                                <small class="color-green">老男孩教育创始人</small>
+                                <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, justo sit amet risus etiam porta sem...</p>
+                                <hr>
+                                <ul class="list-inline team-social">
+                                    <li>
+                                        <a data-placement="top" data-toggle="tooltip" class="fb tooltips" data-original-title="Facebook" href="#">
+                                            <i class="fa fa-facebook"></i>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a data-placement="top" data-toggle="tooltip" class="tw tooltips" data-original-title="Twitter" href="#">
+                                            <i class="fa fa-twitter"></i>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a data-placement="top" data-toggle="tooltip" class="gp tooltips" data-original-title="Google plus" href="#">
+                                            <i class="fa fa-google-plus"></i>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- End Team v2 -->
+
+                    <!-- Team v2 -->
+                    <div class="col-md-3 col-sm-6">
+                        <div class="team-v2 no-margin-bottom">
+                            <img class="img-responsive" src="/static/img/team/team2.jpeg" alt="">
+                            <div class="inner-team">
+                                <h3>Alex Li</h3>
+                                <small class="color-green">CTO & 教学总监</small>
+                                <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, justo sit amet risus etiam porta sem...</p>
+                                <hr>
+                                <ul class="list-inline team-social">
+                                    <li><a data-placement="top" data-toggle="tooltip" class="fb tooltips" data-original-title="Facebook" href="#"><i class="fa fa-facebook"></i></a></li>
+                                    <li><a data-placement="top" data-toggle="tooltip" class="tw tooltips" data-original-title="Twitter" href="#"><i class="fa fa-twitter"></i></a></li>
+                                    <li><a data-placement="top" data-toggle="tooltip" class="gp tooltips" data-original-title="Google plus" href="#"><i class="fa fa-google-plus"></i></a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- End Team v2 -->
+
+                    <!-- Team v2 -->
+                    <div class="col-md-3 col-sm-6">
+                        <div class="team-v2 no-margin-bottom">
+                            <img class="img-responsive" src="/static/img/team/team1.jpeg" alt="">
+                            <div class="inner-team">
+                                <h3>Tenglan Wu</h3>
+                                <small class="color-green">核心Python讲师</small>
+                                <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, justo sit amet risus etiam porta sem...</p>
+                                <hr>
+                                <ul class="list-inline team-social">
+                                    <li>
+                                        <a data-placement="top" data-toggle="tooltip" class="fb tooltips" data-original-title="Facebook" href="#">
+                                            <i class="fa fa-facebook"></i>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a data-placement="top" data-toggle="tooltip" class="tw tooltips" data-original-title="Twitter" href="#">
+                                            <i class="fa fa-twitter"></i>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a data-placement="top" data-toggle="tooltip" class="gp tooltips" data-original-title="Google plus" href="#">
+                                            <i class="fa fa-google-plus"></i>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- End Team v2 -->
+
+                    <!-- Team v2 -->
+                    <div class="col-md-3 col-sm-6">
+                        <div class="team-v2 no-margin-bottom">
+                            <img class="img-responsive" src="/static/img/team/team2.jpeg" alt="">
+                            <div class="inner-team">
+                                <h3>赵班长</h3>
+                                <small class="color-green">核心Linux讲师</small>
+                                <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, justo sit amet risus etiam porta sem...</p>
+                                <hr>
+                                <ul class="list-inline team-social">
+                                    <li>
+                                        <a data-placement="top" data-toggle="tooltip" class="fb tooltips" data-original-title="Facebook" href="#">
+                                            <i class="fa fa-facebook"></i></a>
+                                    </li>
+                                    <li>
+                                        <a data-placement="top" data-toggle="tooltip" class="tw tooltips" data-original-title="Twitter" href="#">
+                                            <i class="fa fa-twitter"></i>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a data-placement="top" data-toggle="tooltip" class="gp tooltips" data-original-title="Google plus" href="#">
+                                            <i class="fa fa-google-plus"></i>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- End Team v2 -->
+                </div>
+
+            <!--end 讲师团队-->
+
+
+
+
+
+
+            <!-- 学员如何说-->
+            <div class="headline margin-bottom-35" style="margin-top: 35px"><h2>听听老学员怎么说?</h2></div>
+            <div class="row margin-bottom-20">
+                <div class="col-sm-4 sm-margin-bottom-20">
+                    <div class="profile-blog">
+                        <img class="rounded-x" src="assets/img/testimonials/img1.jpg" alt="">
+                        <div class="name-location">
+                            <strong>Mikel Andrews</strong>
+                            <span><i class="fa fa-map-marker"></i><a href="#">California,</a> <a href="#">US</a></span>
+                        </div>
+                        <div class="clearfix margin-bottom-20"></div>
+                        <p>Donec non dignissim eros. Mauris faucibus turpis volutpat sagittis rhoncus. Pellentesque et rhoncus sapien, sed ullamcorper justo.</p>
+                        <hr>
+                        <ul class="list-inline share-list">
+                            <li><i class="fa fa-bell"></i><a href="#">12 Notifications</a></li>
+                            <li><i class="fa fa-group"></i><a href="#">54 Followers</a></li>
+                            <li><i class="fa fa-share"></i><a href="#">Share</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="col-sm-4">
+                    <div class="profile-blog">
+                        <img class="rounded-x" src="assets/img/testimonials/user.jpg" alt="">
+                        <div class="name-location">
+                            <strong>Natasha Kolnikova</strong>
+                            <span><i class="fa fa-map-marker"></i><a href="#">Moscow,</a> <a href="#">Russia</a></span>
+                        </div>
+                        <div class="clearfix margin-bottom-20"></div>
+                        <p>Donec non dignissim eros. Mauris faucibus turpis volutpat sagittis rhoncus. Pellentesque et rhoncus sapien, sed ullamcorper justo.</p>
+                        <hr>
+                        <ul class="list-inline share-list">
+                            <li><i class="fa fa-bell"></i><a href="#">37 Notifications</a></li>
+                            <li><i class="fa fa-group"></i><a href="#">46 Followers</a></li>
+                            <li><i class="fa fa-share"></i><a href="#">Share</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="col-sm-4">
+                    <div class="profile-blog">
+                        <img class="rounded-x" src="assets/img/testimonials/user.jpg" alt="">
+                        <div class="name-location">
+                            <strong>Natasha Kolnikova</strong>
+                            <span><i class="fa fa-map-marker"></i><a href="#">Moscow,</a> <a href="#">Russia</a></span>
+                        </div>
+                        <div class="clearfix margin-bottom-20"></div>
+                        <p>Donec non dignissim eros. Mauris faucibus turpis volutpat sagittis rhoncus. Pellentesque et rhoncus sapien, sed ullamcorper justo.</p>
+                        <hr>
+                        <ul class="list-inline share-list">
+                            <li><i class="fa fa-bell"></i><a href="#">37 Notifications</a></li>
+                            <li><i class="fa fa-group"></i><a href="#">46 Followers</a></li>
+                            <li><i class="fa fa-share"></i><a href="#">Share</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+            </div>
+
+            <!--end 学员如何说-->
+
+                </div>
+                <!-- End Left Sidebar -->
+
+                <!-- Right Sidebar -->
+                <div class="col-md-3 magazine-page" style="margin-top: -10px;margin-left: -20px;">
+
+
+                    <div class="panel panel-aqua">
+                        <div class="panel-heading">
+                            <h4 style="margin-left: -8px;" class="panel-title"><i class="fa fa-bullhorn"></i> 最新公告</h4>
+                        </div>
+                        <div class="panel-body">
+                            <ul class="list-unstyled" style="margin-left: -8px;">
+                                <li class="list-group-item-"><span class="color-red">喜报: </span>23期运维班平均工资12K</li>
+                                <li class="list-group-item-"><span class="color-aqua">通知: </span>Python最新奖学金政策</li>
+                                <li class="list-group-item-"><span class="color-red">喜报: </span>老男孩教育获得A轮投资</li>
+                                <li class="list-group-item-"><span class="color-brown">公告: </span>春节放假通知</li>
+                                <li class="list-group-item-"><span class="color-brown">公告: </span>大数据课程开班啦</li>
+                            </ul>
+
+                        </div>
+                    </div>
+
+
+
+                    <!-- Posts -->
+                    <div class="posts margin-bottom-40">
+                        <div class="headline headline-md">
+
+                            <h4><i class="fa fa-calendar-check-o"></i>最新开班</h4>
+
+                        </div>
+                        <dl class="dl-horizontal">
+                            <dt><a href="#"><img src="assets/img/sliders/elastislide/6.jpg" alt="" /></a></dt>
+                            <dd>
+                                <p><a href="#">Responsive Bootstrap 3 Template placerat idelo alac eratamet.</a></p>
+                            </dd>
+                        </dl>
+                        <dl class="dl-horizontal">
+                            <dt><a href="#"><img src="assets/img/sliders/elastislide/10.jpg" alt="" /></a></dt>
+                            <dd>
+                                <p><a href="#">100+ Amazing Features Layer Slider, Layer Slider, fa fas, 60+ Pages etc.</a></p>
+                            </dd>
+                        </dl>
+                        <dl class="dl-horizontal">
+                            <dt><a href="#"><img src="assets/img/sliders/elastislide/11.jpg" alt="" /></a></dt>
+                            <dd>
+                                <p><a href="#">Developer Friendly Code imperdiet condime ntumi mperdiet condim.</a></p>
+                            </dd>
+                        </dl>
+                    </div><!--/posts-->
+                    <!-- End Posts -->
+
+
+                    <!-- Tabs Widget -->
+                    <div class="headline headline-md"><h4><i class="fa  fa-angellist"></i>学员蜕变日记</h4></div>
+                    <div class="tab-v2 margin-bottom-40">
+                        <ul class="list-unstyled" >
+                            <li class="list-group-item-">
+                                <i class=" icon-user"></i>
+                                <span class="color-grey">Py12:年薪6万到30万,我学会了什么?</span></li>
+                            <li class="list-group-item-">
+                                <i class=" icon-user"></i>
+                                <span class="color-grey">Linux23:Python 监控系统开发</span></li>
+                            <li class="list-group-item-">
+                                <i class=" icon-user"></i>
+                                <span class="color-grey">运维真的要out了么?</span></li>
+                            <li class="list-group-item-">
+                                <i class=" icon-user"></i>
+                                <span class="color-grey">13家公司面试经历 </span></li>
+
+                        </ul>
+
+                    </div>
+                    <!-- End Tabs Widget -->
+
+                    <!-- Photo Stream -->
+                    <div class="headline headline-md"><h2>Photo Stream</h2></div>
+                    <ul class="list-unstyled blog-photos margin-bottom-30">
+                        <li><a href="#"><img class="hover-effect" alt="" src="assets/img/sliders/elastislide/5.jpg"></a></li>
+                        <li><a href="#"><img class="hover-effect" alt="" src="assets/img/sliders/elastislide/6.jpg"></a></li>
+                        <li><a href="#"><img class="hover-effect" alt="" src="assets/img/sliders/elastislide/8.jpg"></a></li>
+                        <li><a href="#"><img class="hover-effect" alt="" src="assets/img/sliders/elastislide/10.jpg"></a></li>
+                        <li><a href="#"><img class="hover-effect" alt="" src="assets/img/sliders/elastislide/11.jpg"></a></li>
+                        <li><a href="#"><img class="hover-effect" alt="" src="assets/img/sliders/elastislide/1.jpg"></a></li>
+                        <li><a href="#"><img class="hover-effect" alt="" src="assets/img/sliders/elastislide/2.jpg"></a></li>
+                        <li><a href="#"><img class="hover-effect" alt="" src="assets/img/sliders/elastislide/7.jpg"></a></li>
+                    </ul>
+                    <!-- End Photo Stream -->
+
+                    <!-- Blog Tags -->
+                    <div class="headline headline-md"><h2>Blog Tags</h2></div>
+                    <ul class="list-unstyled blog-tags margin-bottom-30">
+                        <li><a href="#"><i class="fa fa-tags"></i> Business</a></li>
+                        <li><a href="#"><i class="fa fa-tags"></i> Music</a></li>
+                        <li><a href="#"><i class="fa fa-tags"></i> Internet</a></li>
+                        <li><a href="#"><i class="fa fa-tags"></i> Money</a></li>
+                        <li><a href="#"><i class="fa fa-tags"></i> Google</a></li>
+                        <li><a href="#"><i class="fa fa-tags"></i> TV Shows</a></li>
+                        <li><a href="#"><i class="fa fa-tags"></i> Education</a></li>
+                        <li><a href="#"><i class="fa fa-tags"></i> People</a></li>
+                        <li><a href="#"><i class="fa fa-tags"></i> People</a></li>
+                        <li><a href="#"><i class="fa fa-tags"></i> Math</a></li>
+                        <li><a href="#"><i class="fa fa-tags"></i> Photos</a></li>
+                        <li><a href="#"><i class="fa fa-tags"></i> Electronics</a></li>
+                        <li><a href="#"><i class="fa fa-tags"></i> Apple</a></li>
+                        <li><a href="#"><i class="fa fa-tags"></i> Canada</a></li>
+                    </ul>
+                    <!-- End Blog Tags -->
+
+                    <!-- Blog Latest Tweets -->
+                    <div class="blog-twitter margin-bottom-40">
+                        <div class="headline headline-md"><h2>Latest Tweets</h2></div>
+                        <div class="blog-twitter-inner">
+                            <i class="fa fa-twitter"></i>
+                            <a href="#">@htmlstream</a>
+                            At vero eos et accusamus et iusto odio dignissimos.
+                            <a href="#">http://t.co/sBav7dm</a>
+                            <span>5 hours ago</span>
+                        </div>
+                        <div class="blog-twitter-inner">
+                            <i class="fa fa-twitter"></i>
+                            <a href="#">@htmlstream</a>
+                            At vero eos et accusamus et iusto odio dignissimos.
+                            <a href="#">http://t.co/sBav7dm</a>
+                            <span>5 hours ago</span>
+                        </div>
+                        <div class="blog-twitter-inner">
+                            <i class="fa fa-twitter"></i>
+                            <a href="#">@htmlstream</a>
+                            At vero eos et accusamus et iusto odio dignissimos.
+                            <a href="#">http://t.co/sBav7dm</a>
+                            <span>5 hours ago</span>
+                        </div>
+                    </div>
+                    <!-- End Blog Latest Tweets -->
+
+                </div>
+                <!-- End Right Sidebar -->
+            </div><!--/row-->
+
+
+        </div><!--/container-->
+        <!--=== End Content Part ===-->
+
+            <!-- 我们就是最NB的IT实战教育机构-->
+        <div class="full-w-block">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-4 col-sm-4">
+                        <div class="info-blocks">
+                            <i class="fa fa-bell-o icon-info-blocks"></i>
+                            <div class="info-blocks-in">
+                                <h3>Accounting</h3>
+                                <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-4 col-sm-4">
+                        <div class="info-blocks">
+                            <i class="fa fa-laptop icon-info-blocks"></i>
+                            <div class="info-blocks-in">
+                                <h3>10,000+ jobs</h3>
+                                <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium</p>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+            <!--end  我们就是最NB的IT实战教育机构-->
+        <!--下半部分container-->
+        <div class="container content">
+
+            <!--row-->
+            <div class="row blog-page">
+
+                <!-- 为何选择我们-->
+                <div class="headline margin-bottom-35" style="margin-top: 35px"><h2>为何选择老男孩教育?</h2></div>
+                <div class="row">
+                    <div class="col-md-12">
+
+                        <div class="row">
+                            <div class="col-sm-6">
+                                <div class="margin-bottom-30">
+                                    <i class="icon-custom rounded-x icon-sm icon-bg-u icon-bell"></i>
+                                    <div class="service-desc">
+                                        <h2>课程质量最高</h2>
+                                        <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis.</p>
+                                    </div>
+                                </div>
+                                <div class="margin-bottom-30">
+                                    <i class="icon-custom rounded-x icon-sm icon-bg-u icon-like"></i>
+                                    <div class="service-desc">
+                                        <h2>学员平均就业工资最高</h2>
+                                        <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis.</p>
+                                    </div>
+                                </div>
+                                <div class="margin-bottom-30">
+                                    <i class="icon-custom rounded-x icon-sm icon-bg-u icon-bubbles"></i>
+                                    <div class="service-desc">
+                                        <h2>业内口碑最佳</h2>
+                                        <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-6">
+                                <div class="margin-bottom-30">
+                                    <i class="icon-custom rounded-x icon-sm icon-bg-u icon-drawer"></i>
+                                    <div class="service-desc">
+                                        <h2>讲师团队最牛</h2>
+                                        <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis.</p>
+                                    </div>
+                                </div>
+                                <div class="margin-bottom-30">
+                                    <i class="icon-custom rounded-x icon-sm icon-bg-u icon-screen-tablet"></i>
+                                    <div class="service-desc">
+                                        <h2>学员转介绍最多</h2>
+                                        <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis.</p>
+                                    </div>
+                                </div>
+                                <div class="margin-bottom-30">
+                                    <i class="icon-custom rounded-x icon-sm icon-bg-u icon-directions"></i>
+                                    <div class="service-desc">
+                                        <h2>SEO Ready</h2>
+                                        <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+
+                <!--end 为何选择我们-->
+
+
+                <!-- 跟其它机构有什么区别-->
+                    <div class="title-v1" style="margin-top: 35px">
+                        <h2>比其它机构好在哪里?</h2>
+                        <p>IT培训市场上机构众多,质量良莠不齐,每家都说自己是最棒最牛的,结果很多学生去了无良机构没学好,钱被坑了不说,还浪费了很多时间!所以在决定报班学习时,选择一家质量可靠\讲师负责的机构是至关重要的.那么既然每家都说自己最好,广告效果都吹上了天了,<strong>莫明群众怎么才能擦亮眼睛做出正确判断可能呢? </strong> <br>
+                        俗话说,<strong>外行看热闹,内行看门道</strong>,下面就教大家几个判断标准:
+
+                    </div>
+                    <div class="row">
+                        <!--div class="col-md-6">
+                            <img class="img-responsive" src="/static/img/make-decision.jpg" alt="">
+                        </div -->
+                        <div class="col-md-6 content-boxes-v3 padding-top-20">
+                            <div class="clearfix margin-bottom-30">
+                                <i class="icon-custom icon-md rounded-x icon-bg-u icon-line icon-trophy"></i>
+                                <div class="content-boxes-in-v3">
+                                    <h2 class="heading-sm">对比课程表</h2>
+                                    <p>对于懂行的人来讲,通过课程表最容易看出哪家机构讲的内容要更深入,但小白傻傻分不清哪个课程讲的更深入,最简单的办法是找个懂行的人帮你分析一下,如果不认识懂行的人,那就加入相关技术群去问.</p>
+                                </div>
+                            </div>
+                            <div class="clearfix margin-bottom-30">
+                                <i class="icon-custom icon-md rounded-x icon-bg-u icon-line icon-directions"></i>
+                                <div class="content-boxes-in-v3">
+                                    <h2 class="heading-sm">对比讲师水平</h2>
+                                    <p>很多机构因为招不到好老师,甚至让老毕业生来讲课,这在老男孩教育是坚决禁止的,老男孩的讲师都是业内叫得出名子的知名技术大牛,但即使是大牛也不代表就能讲好课,因此所有的讲师在真正讲课前都要当很长时间的助教学习如何讲好课,在老男孩能上讲台讲课的老师都是不简单的.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 content-boxes-v3 padding-top-20">
+                            <div class="clearfix margin-bottom-30">
+                                <i class="icon-custom icon-md rounded-x icon-bg-u icon-line icon-bubbles"></i>
+                                <div class="content-boxes-in-v3">
+                                    <h2 class="heading-sm">对比口碑</h2>
+                                    <p>广告可以花钱做,软文可以雇人写,但是口碑是花钱买不来的,要想真正了解一个学校的口碑,在网上瞎看没用,网上的消息有真有假,一定要找到在这个学校学过的人亲口问一下,老男孩教育的学生遍布在互联网领域的各个公司,多打听下,肯定可以找到在这学过的学员了解一下的</p>
+                                </div>
+                            </div>
+                            <div class="clearfix margin-bottom-30">
+                                <i class="icon-custom icon-md rounded-x icon-bg-u icon-line icon-diamond"></i>
+                                <div class="content-boxes-in-v3">
+                                    <h2 class="heading-sm">对比服务保证</h2>
+                                    <p>在老男孩教育,我们不跟学生签就业保证,因为学习是双方的,就算你去了北大清华,不好好学的话,毕业后水平也是个渣渣,但我们跟学员做的保证是,只要你能按要求修完课程的全部知识,不满意就可以无条件退全部学费,这个是写在合同里的,不是口头承诺,敢这么搞的据我们了解,业内应该还没有.</p>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                <!--end 跟其它机构有什么区别-->
+
+            </div>
+            <!--end row-->
+        </div>
+        <!--end 下半部分container-->
+
+          <!-- 来看看就业-->
+        <div id="job-offer"></div>
+        <div  class="full-w-block">
+            <div class="container">
+                <div class="row">
+                    <div class="title-v1" >
+                        <h2 style="color: white">让我们来看看就业吧</h2>
+                        <p>IT培训市场上机构众多,质量良莠不齐,每家都说自己是最棒最牛的,结果很多学生去了无良机构没学好,钱被坑了不说,还浪费了很多时间!所以在决定报班学习时,选择一家质量可靠\讲师负责的机构是至关重要的.那么既然每家都说自己最好,广告效果都吹上了天了,<strong>莫明群众怎么才能擦亮眼睛做出正确判断可能呢? </strong> <br>
+                        俗话说,<strong>外行看热闹,内行看门道</strong>,下面就教大家几个判断标准:
+
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+            <!--end  来看看就业-->
+
+
+        <!--就业部分container-->
+        <div class="container content">
+            <div class="row content-lg">
+
+                dff
+
+            </div> <!--end row-->
+        </div>
+        <!--end 就业部分container-->
+    {% endblock page-content-container %}
+    </div> <!--end page-content-container-->
+
+     <!--=== Footer Version 1 ===-->
+    <div class="footer-v1">
+        <div class="footer">
+            <div class="container">
+                <div class="row">
+                    <!-- About -->
+                    <div class="col-md-3 md-margin-bottom-40">
+                        <!--a href="index.html"><img id="logo-footer" class="footer-logo" src="assets/img/logo2-default.png" alt=""></a-->
+                        <p href="index.html"><p class="footer-logo" >Oldboy</p>
+                        <p>About Unify dolor sit amet, consectetur adipiscing elit. Maecenas eget nisl id libero tincidunt sodales.</p>
+                        <p>Duis eleifend fermentum ante ut aliquam. Cras mi risus, dignissim sed adipiscing ut, placerat non arcu.</p>
+                    </div><!--/col-md-3-->
+                    <!-- End About -->
+
+                    <!-- Latest -->
+                    <div class="col-md-3 md-margin-bottom-40">
+                        <div class="posts">
+                            <div class="headline"><h2>Latest Posts</h2></div>
+                            <ul class="list-unstyled latest-list">
+                                <li>
+                                    <a href="#">Incredible content</a>
+                                    <small>May 8, 2014</small>
+                                </li>
+                                <li>
+                                    <a href="#">Best shoots</a>
+                                    <small>June 23, 2014</small>
+                                </li>
+                                <li>
+                                    <a href="#">New Terms and Conditions</a>
+                                    <small>September 15, 2014</small>
+                                </li>
+                            </ul>
+                        </div>
+                    </div><!--/col-md-3-->
+                    <!-- End Latest -->
+
+                    <!-- Link List -->
+                    <div class="col-md-3 md-margin-bottom-40">
+                        <div class="headline"><h2>Useful Links</h2></div>
+                        <ul class="list-unstyled link-list">
+                            <li><a href="#">About us</a><i class="fa fa-angle-right"></i></li>
+                            <li><a href="#">Portfolio</a><i class="fa fa-angle-right"></i></li>
+                            <li><a href="#">Latest jobs</a><i class="fa fa-angle-right"></i></li>
+                            <li><a href="#">Community</a><i class="fa fa-angle-right"></i></li>
+                            <li><a href="#">Contact us</a><i class="fa fa-angle-right"></i></li>
+                        </ul>
+                    </div><!--/col-md-3-->
+                    <!-- End Link List -->
+
+                    <!-- Address -->
+                    <div class="col-md-3 map-img md-margin-bottom-40">
+                        <div class="headline"><h2>Contact Us</h2></div>
+                        <address class="md-margin-bottom-40">
+                            25, Lorem Lis Street, Orange <br />
+                            California, US <br />
+                            Phone: 800 123 3456 <br />
+                            Fax: 800 123 3456 <br />
+                            Email: <a href="mailto:info@anybiz.com" class="">info@anybiz.com</a>
+                        </address>
+                    </div><!--/col-md-3-->
+                    <!-- End Address -->
+                </div>
+            </div>
+        </div><!--/footer-->
+
+        <div class="copyright">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6">
+                        <p>
+                            2015 &copy; All Rights Reserved.
+                           <a href="#">Privacy Policy</a> | <a href="#">Terms of Service</a>
+                        </p>
+                    </div>
+
+                    <!-- Social Links -->
+                    <div class="col-md-6">
+                        <ul class="footer-socials list-inline">
+                            <li>
+                                <a href="#" class="tooltips" data-toggle="tooltip" data-placement="top" title="" data-original-title="Facebook">
+                                    <i class="fa fa-facebook"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" class="tooltips" data-toggle="tooltip" data-placement="top" title="" data-original-title="Skype">
+                                    <i class="fa fa-skype"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" class="tooltips" data-toggle="tooltip" data-placement="top" title="" data-original-title="Google Plus">
+                                    <i class="fa fa-google-plus"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" class="tooltips" data-toggle="tooltip" data-placement="top" title="" data-original-title="Linkedin">
+                                    <i class="fa fa-linkedin"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" class="tooltips" data-toggle="tooltip" data-placement="top" title="" data-original-title="Pinterest">
+                                    <i class="fa fa-pinterest"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" class="tooltips" data-toggle="tooltip" data-placement="top" title="" data-original-title="Twitter">
+                                    <i class="fa fa-twitter"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" class="tooltips" data-toggle="tooltip" data-placement="top" title="" data-original-title="Dribbble">
+                                    <i class="fa fa-dribbble"></i>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <!-- End Social Links -->
+                </div>
+            </div>
+        </div><!--/copyright-->
+    </div>
+    <!--=== End Footer Version 1 ===-->
+</div><!--/wrapper-->
+
+{% endblock %}
+{% block bottom-js %}
+<script>
+
+</script>
+{% endblock %}

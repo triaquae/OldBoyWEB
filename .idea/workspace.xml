@@ -1,14 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="54989d45-ce34-42ca-a205-ed0c9f6dd730" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/dictionaries/jieli.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/statics/img/bg/py_course_bg.jpg" afterPath="$PROJECT_DIR$/statics/img/bg/py_course_bg.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/web/base.html" afterPath="$PROJECT_DIR$/templates/web/base.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/web/course_py_devops.html" afterPath="$PROJECT_DIR$/templates/web/course_py_devops.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/web/index.html" afterPath="$PROJECT_DIR$/templates/web/index.html" />
-    </list>
+    <list default="true" id="54989d45-ce34-42ca-a205-ed0c9f6dd730" name="Default" comment="" />
     <ignored path="OldBoyWEB.iws" />
     <ignored path=".idea/workspace.xml" />
     <ignored path=".idea/dataSources.local.xml" />
@@ -38,8 +31,8 @@
       <file leaf-file-name="course_py_devops.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/templates/web/course_py_devops.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.5086207">
-              <caret line="948" column="50" selection-start-line="948" selection-start-column="50" selection-end-line="948" selection-end-column="50" />
+            <state vertical-scroll-proportion="0.45402297">
+              <caret line="947" column="14" selection-start-line="947" selection-start-column="14" selection-end-line="947" selection-end-column="14" />
               <folding>
                 <element signature="e#17800#19660#0#HTML" expanded="false" />
                 <element signature="e#26902#32366#0#HTML" expanded="false" />
@@ -533,7 +526,7 @@
     </history-entry>
   </component>
   <component name="ToolWindowManager">
-    <frame x="10" y="23" width="1440" height="803" extended-state="6" />
+    <frame x="10" y="23" width="1440" height="803" extended-state="1" />
     <editor active="true" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.1303725" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -616,8 +609,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/templates/web/course_py_devops.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.5086207">
-          <caret line="948" column="50" selection-start-line="948" selection-start-column="50" selection-end-line="948" selection-end-column="50" />
+        <state vertical-scroll-proportion="0.45402297">
+          <caret line="947" column="14" selection-start-line="947" selection-start-column="14" selection-end-line="947" selection-end-column="14" />
           <folding>
             <element signature="e#17800#19660#0#HTML" expanded="false" />
             <element signature="e#26902#32366#0#HTML" expanded="false" />

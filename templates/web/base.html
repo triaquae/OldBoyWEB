@@ -68,6 +68,20 @@
     jQuery(document).ready(function() {
         App.init();
         StyleSwitcher.initStyleSwitcher();
+
+
+        $(".navbar-nav a").each(function(index,ele){
+
+
+            console.log($(ele).attr("href"));
+            if( $(ele).attr("href") =="{{ request.path }}" ){
+
+                $(ele).parent().addClass("active");
+            }
+
+        });//end navbar-nav
+        console.log("{{ request.path }}")
+
     });
 </script>
 <!--[if lt IE 9]>

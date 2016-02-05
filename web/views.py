@@ -21,5 +21,15 @@ def index(request):
 
 def about_us(request):
     return render(request,'web/about_us.html')
+
+def teachers(request):
+    return render(request,'web/teachers.html')
+
+
+
+def course_linux_ops(request):
+
+    return render(request,'web/course_linux_ops.html')
+
 def course_py_devops(request):
     return render(request,'web/course_py_devops.html')

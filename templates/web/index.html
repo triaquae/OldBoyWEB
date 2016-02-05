@@ -59,10 +59,10 @@
 												课程
 											</a>
 											<ul class="dropdown-menu ">
-												<li><a href="index.html">Linux中高级运维工程师课程</a></li>
+												<li><a href="{% url 'course_linux_ops' %}">Linux中高级运维工程师课程</a></li>
 												<li><a href="index.html">Linux运维高级架构师课程</a></li>
 												<li><a href="{% url 'course_py_devops' %}">Python自动化开发课程</a></li>
-												<li><a href="index.html">Python全栈开发工程师课程</a></li>
+												<li><a href="">Python全栈开发工程师课程</a></li>
 												<li><a href="index.html">云计算开发课程</a></li>
 												<li><a href="index.html">大数据开发课程</a></li>
                                             </ul>
@@ -86,7 +86,7 @@
 
                     <!-- 讲师 -->
                     <li class="page-scroll">
-                        <a href="#teachers" >
+                        <a href="{% url 'teachers' %}" >
                             专家讲师
                         </a>
 
@@ -536,123 +536,6 @@
                     </div>
 
                     <!--end 学员如何说-->
-
-                    <!--讲师团队-->
-                    <div id="teachers" class="headline margin-bottom-35"><h2>核心讲师团队</h2></div>
-                    <div class="row">
-                            <!-- Team v2 -->
-                            <div class="col-md-3 col-sm-6">
-                                <div class="team-v2 no-margin-bottom">
-                                    <img class="img-responsive" src="/static/img/team/team1.jpeg" alt="">
-                                    <div class="inner-team">
-                                        <h3>老男孩</h3>
-                                        <small class="color-green">老男孩教育创始人</small>
-                                        <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, justo sit amet risus etiam porta sem...</p>
-                                        <hr>
-                                        <ul class="list-inline team-social">
-                                            <li>
-                                                <a data-placement="top" data-toggle="tooltip" class="fb tooltips" data-original-title="Facebook" href="#">
-                                                    <i class="fa fa-facebook"></i>
-                                                </a>
-                                            </li>
-                                            <li>
-                                                <a data-placement="top" data-toggle="tooltip" class="tw tooltips" data-original-title="Twitter" href="#">
-                                                    <i class="fa fa-twitter"></i>
-                                                </a>
-                                            </li>
-                                            <li>
-                                                <a data-placement="top" data-toggle="tooltip" class="gp tooltips" data-original-title="Google plus" href="#">
-                                                    <i class="fa fa-google-plus"></i>
-                                                </a>
-                                            </li>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </div>
-                            <!-- End Team v2 -->
-
-                            <!-- Team v2 -->
-                            <div class="col-md-3 col-sm-6">
-                                <div class="team-v2 no-margin-bottom">
-                                    <img class="img-responsive" src="/static/img/team/team2.jpeg" alt="">
-                                    <div class="inner-team">
-                                        <h3>Alex Li</h3>
-                                        <small class="color-green">CTO & 教学总监</small>
-                                        <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, justo sit amet risus etiam porta sem...</p>
-                                        <hr>
-                                        <ul class="list-inline team-social">
-                                            <li><a data-placement="top" data-toggle="tooltip" class="fb tooltips" data-original-title="Facebook" href="#"><i class="fa fa-facebook"></i></a></li>
-                                            <li><a data-placement="top" data-toggle="tooltip" class="tw tooltips" data-original-title="Twitter" href="#"><i class="fa fa-twitter"></i></a></li>
-                                            <li><a data-placement="top" data-toggle="tooltip" class="gp tooltips" data-original-title="Google plus" href="#"><i class="fa fa-google-plus"></i></a></li>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </div>
-                            <!-- End Team v2 -->
-
-                            <!-- Team v2 -->
-                            <div class="col-md-3 col-sm-6">
-                                <div class="team-v2 no-margin-bottom">
-                                    <img class="img-responsive" src="/static/img/team/team1.jpeg" alt="">
-                                    <div class="inner-team">
-                                        <h3>Tenglan Wu</h3>
-                                        <small class="color-green">核心Python讲师</small>
-                                        <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, justo sit amet risus etiam porta sem...</p>
-                                        <hr>
-                                        <ul class="list-inline team-social">
-                                            <li>
-                                                <a data-placement="top" data-toggle="tooltip" class="fb tooltips" data-original-title="Facebook" href="#">
-                                                    <i class="fa fa-facebook"></i>
-                                                </a>
-                                            </li>
-                                            <li>
-                                                <a data-placement="top" data-toggle="tooltip" class="tw tooltips" data-original-title="Twitter" href="#">
-                                                    <i class="fa fa-twitter"></i>
-                                                </a>
-                                            </li>
-                                            <li>
-                                                <a data-placement="top" data-toggle="tooltip" class="gp tooltips" data-original-title="Google plus" href="#">
-                                                    <i class="fa fa-google-plus"></i>
-                                                </a>
-                                            </li>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </div>
-                            <!-- End Team v2 -->
-
-                            <!-- Team v2 -->
-                            <div class="col-md-3 col-sm-6">
-                                <div class="team-v2 no-margin-bottom">
-                                    <img class="img-responsive" src="/static/img/team/team2.jpeg" alt="">
-                                    <div class="inner-team">
-                                        <h3>赵班长</h3>
-                                        <small class="color-green">核心Linux讲师</small>
-                                        <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, justo sit amet risus etiam porta sem...</p>
-                                        <hr>
-                                        <ul class="list-inline team-social">
-                                            <li>
-                                                <a data-placement="top" data-toggle="tooltip" class="fb tooltips" data-original-title="Facebook" href="#">
-                                                    <i class="fa fa-facebook"></i></a>
-                                            </li>
-                                            <li>
-                                                <a data-placement="top" data-toggle="tooltip" class="tw tooltips" data-original-title="Twitter" href="#">
-                                                    <i class="fa fa-twitter"></i>
-                                                </a>
-                                            </li>
-                                            <li>
-                                                <a data-placement="top" data-toggle="tooltip" class="gp tooltips" data-original-title="Google plus" href="#">
-                                                    <i class="fa fa-google-plus"></i>
-                                                </a>
-                                            </li>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </div>
-                            <!-- End Team v2 -->
-                        </div>
-
-                    <!--end 讲师团队-->
 
 
                 </div> <!--end col-md-12-->

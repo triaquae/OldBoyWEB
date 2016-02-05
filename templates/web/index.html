@@ -1,6 +1,7 @@
 {% extends 'web/base.html' %}
-
+{% load custom_tags %}
 {% block page-container %}
+
 
 <div class="wrapper">
     <!--=== Header ===-->
@@ -359,42 +360,29 @@
             <div class="row blog-page " >
                 <div class="col-md-12">
                     <!--最新就业-->
-                    <h3>最新就业</h3>
+                    <div class="headline margin-bottom-35"><h3>最新就业</h3></div>
+                        <div class="row">
+                            {% for graudate_class in recent_graduates %}
 
-                    <div class="tab-v1">
-                        <ul class="nav nav-tabs">
-                                <li class="active"><a href="#home" data-toggle="tab" aria-expanded="true">Linux中高级</a></li>
-                                <li class=""><a href="#profile" data-toggle="tab" aria-expanded="false">Python自动化</a></li>
-                                <li class=""><a href="#messages" data-toggle="tab" aria-expanded="false">Linux架构师</a></li>
-                                <li class=""><a href="#settings" data-toggle="tab" aria-expanded="false">大数据开发</a></li>
-                        </ul>
-                        <div class="tab-content">
-                                <div class="tab-pane fade active in" id="home">
-                                        <div class="row">
-                                                <div class="col-md-4">
-                                                        <img alt="" class="img-responsive img-tab-space" src="assets/img/main/img10.jpg">
-                                                </div>
-                                                <div class="col-md-8">
-                                                        <h4>Heading Sample 1</h4>
-                                                        <p>Vivamus imperdiet condimentum diam, eget placerat felis consectetur id. Donec eget orci metus, ac adipiscing nunc. Pellentesque fermentum <strong>ivamus imperdiet</strong> condimentum diam, eget placerat felis consectetur id. Donec eget orci metus, ac adipiscing nunc. Pellentesque <strong>fermentum vivamus</strong> imperdiet condimentum diam, eget placerat felis consectetur id. Donec eget orci metus, ac adipiscing nunc. Pellentesque fermentum, ante ac felis consectetur id. Donec eget orci metusvivamus imperdiet.</p>
-                                                </div>
+                            <div class="col-md-3">
+                                <div class="thumbnails thumbnail-style thumbnail-kenburn">
+                                    <div class="thumbnail-img">
+                                        <div class="overflow-hidden">
+                                            <img class="img-responsive" src="{% convert_img_src graudate_class.img %}" alt="">
                                         </div>
+                                        <a class="btn-more hover-effect"   href="#">平均工资<span style="font-size: 23px">{{ graudate_class.average_salary }}</span> </a>
+                                    </div>
+                                    <div class="caption">
+                                        <h3><a class="hover-effect" href="#"><span class="color-orange">[{{ graudate_class.semester }}期]</span>{{ graudate_class.course_name }}</a></h3>
+                                        <p><b>毕业日期:</b> {{ graudate_class.graduate_date |date:"m-d"}}</p>
+                                        <p><b>班级人数:</b> {{ graudate_class.stu_num }}</p>
+                                    </div>
                                 </div>
-                                <div class="tab-pane fade" id="profile">
-                                        <img alt="" class="pull-left lft-img-margin img-width-200" src="assets/img/main/img20.jpg">
-                                        <h4>Heading Sample 2</h4>
-                                        <p>Vivamus imperdiet condimentum diam, eget placerat felis consectetur id. Donec eget orci metus, ac adipiscing nunc. Pellentesque fermentum, ante ac interdum <strong>ac adipiscing nunc.</strong> Vivamus imperdiet condimentum diam, eget placerat felis consectetur id. Pellentesque fermentum, ante ac interdum id. Donec eget orci metus, ac adipiscing nunc. Pellentesque fermentum, ante ac <strong>interdum ullamcorper.</strong></p>
-                                </div>
-                                <div class="tab-pane fade" id="messages">
-                                        <h4>Heading Sample 3</h4>
-                                        <p><img alt="" class="pull-right rgt-img-margin img-width-200" src="assets/img/main/img18.jpg"> <strong>Vivamus imperdiet condimentum diam, eget placerat felis consectetur id.</strong> Donec eget orci metus, Vivamus imperdiet condimentum diam, eget placerat felis consectetur id. Donec eget orci metus, ac adipiscing nunc. Pellentesque fermentum, ante ac interdum ullamcorper. Donec eget orci metus, ac adipiscing nunc. Pellentesque fermentum, consectetur id. Donec eget orci metus, ac adipiscing nunc. <strong>Pellentesque fermentum</strong>, ante ac interdum ullamcorper. Donec eget orci metus, ac adipiscing nunc. Pellentesque fermentum, ante ac interdum ullamcorper.</p>
-                                </div>
-                                <div class="tab-pane fade" id="settings">
-                                        <h4>Heading Sample 4</h4>
-                                        <p><img alt="" class="pull-right rgt-img-margin img-width-200" src="assets/img/main/img24.jpg"> Vivamus imperdiet condimentum diam, eget placerat felis consectetur id. Donec eget orci metus, Vivamus imperdiet condimentum diam, eget placerat felis consectetur id. Donec eget orci metus, ac adipiscing nunc. Pellentesque fermentum, ante ac interdum ullamcorper. Donec eget orci metus, ac adipiscing nunc. Pellentesque fermentum, consectetur id. Donec eget orci metus, ac adipiscing nunc. <strong>Pellentesque fermentum</strong>, ante ac interdum ullamcorper. Donec eget orci metus, ac adipiscing nunc. Pellentesque fermentum, ante ac interdum ullamcorper.</p>
-                                </div>
+                            </div>
+                            {% endfor %}
+
                         </div>
-                    </div>
+
 
                     <!--end 最新就业-->
                     <!--公开课&视频-->
@@ -412,62 +400,25 @@
 
                                     <!--公开课-->
                                         <div class="row">
+                                            {% for public_class in recent_public_classes %}
+
                                             <div class="col-md-3">
                                                 <div class="thumbnails thumbnail-style thumbnail-kenburn">
                                                     <div class="thumbnail-img">
                                                         <div class="overflow-hidden">
-                                                            <img class="img-responsive" src="assets/img/main/img3.jpg" alt="">
+                                                            <img class="img-responsive" src="{% convert_img_src public_class.img %}" alt="">
                                                         </div>
-                                                        <a class="btn-more hover-effect" href="#">read more +</a>
+                                                        <a class="btn-more hover-effect" href="#">免费报名 +</a>
                                                     </div>
                                                     <div class="caption">
-                                                        <h3><a class="hover-effect" href="#">Project One</a></h3>
-                                                        <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, justo sit amet risus etiam porta sem.</p>
+                                                        <h3><a class="hover-effect" href="#">{{ public_class.title }}</a></h3>
+                                                        <p><b>开课:</b>{{ public_class.start_date|date:"m.d H:i"  }}</p>
+                                                        <p><b>讲师:</b>{{ public_class.teacher }}</p>
                                                     </div>
                                                 </div>
                                             </div>
-                                            <div class="col-md-3">
-                                                <div class="thumbnails thumbnail-style thumbnail-kenburn">
-                                                    <div class="thumbnail-img">
-                                                        <div class="overflow-hidden">
-                                                            <img class="img-responsive" src="assets/img/main/img4.jpg" alt="">
-                                                        </div>
-                                                        <a class="btn-more hover-effect" href="#">read more +</a>
-                                                    </div>
-                                                    <div class="caption">
-                                                        <h3><a class="hover-effect" href="#">Project Two</a></h3>
-                                                        <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, justo sit amet risus etiam porta sem.</p>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="col-md-3">
-                                                <div class="thumbnails thumbnail-style thumbnail-kenburn">
-                                                    <div class="thumbnail-img">
-                                                        <div class="overflow-hidden">
-                                                            <img class="img-responsive" src="assets/img/main/img1.jpg" alt="">
-                                                        </div>
-                                                        <a class="btn-more hover-effect" href="#">read more +</a>
-                                                    </div>
-                                                    <div class="caption">
-                                                        <h3><a class="hover-effect" href="#">Project Three</a></h3>
-                                                        <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, justo sit amet risus etiam porta sem.</p>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="col-md-3">
-                                                <div class="thumbnails thumbnail-style thumbnail-kenburn">
-                                                    <div class="thumbnail-img">
-                                                        <div class="overflow-hidden">
-                                                            <img class="img-responsive" src="assets/img/main/img1.jpg" alt="">
-                                                        </div>
-                                                        <a class="btn-more hover-effect" href="#">read more +</a>
-                                                    </div>
-                                                    <div class="caption">
-                                                        <h3><a class="hover-effect" href="#">Project Three</a></h3>
-                                                        <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, justo sit amet risus etiam porta sem.</p>
-                                                    </div>
-                                                </div>
-                                            </div>
+                                            {% endfor %}
+
                                         </div>
                                     <!--end 公开课-->
 
@@ -479,12 +430,12 @@
                                                 <div class="thumbnails thumbnail-style thumbnail-kenburn">
                                                     <div class="thumbnail-img">
                                                         <div class="overflow-hidden">
-                                                            <img class="img-responsive" src="assets/img/main/img3.jpg" alt="">
+                                                            <img class="img-responsive" src="/static/img/home/linux_video.jpg" alt="">
                                                         </div>
-                                                        <a class="btn-more hover-effect" href="#">read more +</a>
+                                                        <a class="btn-more hover-effect" href="#">下载 +</a>
                                                     </div>
                                                     <div class="caption">
-                                                        <h3><a class="hover-effect" href="#">Project One</a></h3>
+                                                        <h3><a class="hover-effect" href="#">Linux运维+架构视频</a></h3>
                                                         <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, justo sit amet risus etiam porta sem.</p>
                                                     </div>
                                                 </div>
@@ -493,13 +444,13 @@
                                                 <div class="thumbnails thumbnail-style thumbnail-kenburn">
                                                     <div class="thumbnail-img">
                                                         <div class="overflow-hidden">
-                                                            <img class="img-responsive" src="assets/img/main/img4.jpg" alt="">
+                                                            <img class="img-responsive" src="/static/img/home/python_video.jpg" alt="">
                                                         </div>
-                                                        <a class="btn-more hover-effect" href="#">read more +</a>
+                                                        <a class="btn-more hover-effect" href="#">下载 +</a>
                                                     </div>
                                                     <div class="caption">
-                                                        <h3><a class="hover-effect" href="#">Project Two</a></h3>
-                                                        <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, justo sit amet risus etiam porta sem.</p>
+                                                        <h3><a class="hover-effect" href="#">Python自动化+Django视频</a></h3>
+                                                        <p>包含详细的Python基础教程,WEB开发基础及Django WEB框架知识</p>
                                                     </div>
                                                 </div>
                                             </div>
@@ -507,12 +458,12 @@
                                                 <div class="thumbnails thumbnail-style thumbnail-kenburn">
                                                     <div class="thumbnail-img">
                                                         <div class="overflow-hidden">
-                                                            <img class="img-responsive" src="assets/img/main/img1.jpg" alt="">
+                                                            <img class="img-responsive" src="/static/img/home/bigdata_video.jpg" alt="">
                                                         </div>
-                                                        <a class="btn-more hover-effect" href="#">read more +</a>
+                                                        <a class="btn-more hover-effect" href="#">下载 +</a>
                                                     </div>
                                                     <div class="caption">
-                                                        <h3><a class="hover-effect" href="#">Project Three</a></h3>
+                                                        <h3><a class="hover-effect" href="#">Java&大数据开发视频</a></h3>
                                                         <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, justo sit amet risus etiam porta sem.</p>
                                                     </div>
                                                 </div>

@@ -1,7 +1,7 @@
 #_*_coding:utf8_*_
 
 from django.db import models
-
+from django.utils import timezone
 # Create your models here.
 
 
@@ -25,3 +25,27 @@ class NotificationLinks(models.Model):
     def __unicode__(self):
         return self.title
 
+
+class PublicClass(models.Model):
+    title = models.CharField(u"主题",max_length=128,unique=True,help_text=u"公开课主题...")
+    start_date = models.DateTimeField(u"开课时间")
+    teacher = models.CharField(u"讲师",max_length=32)
+    link = models.URLField(u"报名链接")
+    img = models.ImageField(u"页面显示图片",help_text=u"确保图片裁剪至650x397,且分辨率为300",upload_to="statics/img/home/public_class/")
+
+    def __unicode__(self):
+        return self.title
+
+
+class NewGraduates(models.Model):
+    course_name = models.CharField(u"课程名称",max_length=64)
+    semester = models.CharField(u"学期",max_length=32)
+    graduate_date = models.DateField(u"毕业日期",default=timezone.now)
+    average_salary = models.IntegerField(u"平均工资",help_text=u"写数字",default=10000)
+    stu_num = models.IntegerField(u"班级人数",help_text=u"写数字",default=65)
+
+    link = models.URLField(u"详细列表")
+    img = models.ImageField(u"页面显示图片",help_text=u"确保图片裁剪至650x397,且分辨率为300",upload_to="statics/img/home//")
+
+    def __unicode__(self):
+        return self.course_name

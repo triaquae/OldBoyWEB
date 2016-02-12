@@ -2,125 +2,15 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="412f9f1d-c377-47d4-a095-ccf30552f4a0" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/statics/img/about_us/about_us_header2.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/statics/img/bg/architect2.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/statics/img/bg/bigdata.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/statics/img/bg/enrollment_bg.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/statics/img/bg/enrollment_bg2.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/statics/img/bg/enrollment_bg3.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/statics/img/bg/enrollment_bg4.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/statics/img/bg/home_page_bg1.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/statics/img/bg/home_page_bg2.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/statics/img/bg/home_page_bg3.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/statics/img/bg/home_page_bg4.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/statics/img/bg/jobs_bg.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/statics/img/bg/jobs_bg2.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/statics/img/bg/python_fullstack2.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/statics/img/bg/teachers_bg.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/statics/img/course/bigdata/bigdata1.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/statics/img/logo/logo_black.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/statics/img/logo/logo_gray.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/statics/img/offers/linux/01.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/statics/img/offers/linux/02.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/statics/img/offers/linux/03.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/statics/img/offers/linux/04.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/statics/img/offers/linux/05.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/statics/img/offers/linux/06.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/statics/img/offers/linux/07.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/statics/img/offers/linux/08.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/statics/img/offers/linux/09.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/statics/img/offers/linux/10.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/statics/img/offers/linux/11.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/statics/img/offers/linux/12.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/statics/img/offers/linux/13.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/statics/img/offers/linux/14.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/statics/img/offers/linux/15.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/statics/img/offers/linux/16.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/statics/img/offers/linux/17.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/statics/img/offers/linux/18.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/statics/img/offers/linux/19.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/statics/img/offers/linux/20.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/statics/img/offers/linux/21.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/statics/img/offers/linux/22.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/statics/img/offers/linux/23.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/statics/img/offers/linux/24.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/statics/img/offers/linux/25.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/statics/img/offers/linux/26.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/statics/img/offers/linux/27.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/statics/img/offers/linux/28.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/statics/img/offers/linux/29.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/statics/img/offers/linux/30.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/statics/img/offers/linux/31.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/statics/img/offers/linux/psbN8JF0WJA.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/statics/img/offers/linux/psbNAKGE8RG.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/statics/img/offers/linux/psbOYJS34OV.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/statics/img/offers/linux/psbP1GT290D.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/statics/img/offers/linux/psbR4MP115D.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/statics/img/offers/linux/psbRRVZPQY9.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/statics/img/offers/linux/psbSE3WL1H9.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/statics/img/offers/linux/psbUXZUEYFY.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/statics/img/offers/linux/psbWSMSGMPG.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/statics/img/offers/linux/psbYJLCHQ20.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/statics/img/offers/offer1.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/statics/img/offers/offer10.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/statics/img/offers/offer11.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/statics/img/offers/offer12.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/statics/img/offers/offer13.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/statics/img/offers/offer14.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/statics/img/offers/offer2.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/statics/img/offers/offer3.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/statics/img/offers/offer4.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/statics/img/offers/offer5.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/statics/img/offers/offer6.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/statics/img/offers/offer7.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/statics/img/offers/offer8.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/statics/img/offers/offer9.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/statics/img/stu/s1.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/statics/img/stu/s2.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/statics/img/stu/s3.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/statics/img/stu/s4.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/statics/img/stu/s5.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/statics/img/stu/s6.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/statics/img/team/t1.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/statics/img/team/t10.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/statics/img/team/t11.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/statics/img/team/t2.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/statics/img/team/t3.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/statics/img/team/t4.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/statics/img/team/t5.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/statics/img/team/t6.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/statics/img/team/t7.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/statics/img/team/t8.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/statics/img/team/t9.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/test" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/web/course_bigdata.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/web/course_linux_architect.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/web/enrollment/enrollment_conditions.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/web/enrollment/enrollment_flow.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/web/enrollment/faqs.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/web/enrollment/python_devops.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/web/how_to_enroll.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/web/jobs.html" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/templates/web/temp.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/migrations/0002_auto_20160201_0904.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/migrations/0003_auto_20160201_0922.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/migrations/0004_auto_20160201_0923.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/migrations/0005_publicclass.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/migrations/0006_auto_20160204_1009.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/migrations/0007_auto_20160204_1009.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/migrations/0008_newgraduates_stu_num.py" afterPath="" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/statics/img/logo-gray-vertical.jpeg" afterPath="$PROJECT_DIR$/statics/img/logo/logo-gray-vertical.jpeg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/statics/img/logo-gray.jpeg" afterPath="$PROJECT_DIR$/statics/img/logo/logo-gray.jpeg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/utils.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/OldboyWebSite/urls.py" afterPath="$PROJECT_DIR$/OldboyWebSite/urls.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/statics/css/custom.css" afterPath="$PROJECT_DIR$/statics/css/custom.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/web/about_us.html" afterPath="$PROJECT_DIR$/templates/web/about_us.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/web/base.html" afterPath="$PROJECT_DIR$/templates/web/base.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/web/course_bigdata.html" afterPath="$PROJECT_DIR$/templates/web/course_bigdata.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/web/course_linux_architect.html" afterPath="$PROJECT_DIR$/templates/web/course_linux_architect.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/web/course_linux_ops.html" afterPath="$PROJECT_DIR$/templates/web/course_linux_ops.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/web/course_py_devops.html" afterPath="$PROJECT_DIR$/templates/web/course_py_devops.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/web/index.html" afterPath="$PROJECT_DIR$/templates/web/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/web/teachers.html" afterPath="$PROJECT_DIR$/templates/web/teachers.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/migrations/0001_initial.py" afterPath="$PROJECT_DIR$/web/migrations/0001_initial.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/admin.py" afterPath="$PROJECT_DIR$/web/admin.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/models.py" afterPath="$PROJECT_DIR$/web/models.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/views.py" afterPath="$PROJECT_DIR$/web/views.py" />
     </list>
     <ignored path="OldBoyWEB.iws" />
@@ -146,26 +36,17 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="index.html" pinned="false" current-in-tab="true">
+      <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/templates/web/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.5784946">
-              <caret line="444" column="66" selection-start-line="444" selection-start-column="66" selection-end-line="444" selection-end-column="66" />
+            <state vertical-scroll-proportion="-5.8727274">
+              <caret line="163" column="147" selection-start-line="163" selection-start-column="147" selection-end-line="163" selection-end-column="147" />
               <folding>
                 <element signature="e#326#379#0#HTML" expanded="true" />
-                <element signature="e#24406#27028#0#HTML" expanded="false" />
-                <element signature="e#31449#31474#0#HTML" expanded="true" />
+                <element signature="e#7143#7166#0#HTML" expanded="true" />
+                <element signature="e#23828#26450#0#HTML" expanded="false" />
+                <element signature="e#30871#30896#0#HTML" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="base.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/templates/web/base.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="25.107143">
-              <caret line="12" column="0" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
-              <folding />
             </state>
           </provider>
         </entry>
@@ -173,35 +54,62 @@
       <file leaf-file-name="about_us.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/templates/web/about_us.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-12.892858">
+            <state vertical-scroll-proportion="-32.57143">
               <caret line="48" column="158" selection-start-line="48" selection-start-column="158" selection-end-line="48" selection-end-column="158" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="logo_gray.png" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/statics/img/logo/logo_gray.png">
-          <provider selected="true" editor-type-id="images">
-            <state />
+      <file leaf-file-name="models.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/web/models.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-6.035714">
+              <caret line="52" column="17" selection-start-line="52" selection-start-column="6" selection-end-line="52" selection-end-column="17" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="views.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/web/views.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-7.464286">
+              <caret line="37" column="98" selection-start-line="37" selection-start-column="98" selection-end-line="37" selection-end-column="98" />
+              <folding>
+                <element signature="e#0#35#0" expanded="true" />
+              </folding>
+            </state>
           </provider>
         </entry>
       </file>
       <file leaf-file-name="course_bigdata.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/templates/web/course_bigdata.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-12.142858">
-              <caret line="682" column="0" selection-start-line="682" selection-start-column="0" selection-end-line="688" selection-end-column="14" />
+            <state vertical-scroll-proportion="-10.857142">
+              <caret line="26" column="122" selection-start-line="26" selection-start-column="122" selection-end-line="26" selection-end-column="122" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="course_linux_architect.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/templates/web/course_linux_architect.html">
+      <file leaf-file-name="utils.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/web/utils.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-9.5">
-              <caret line="37" column="78" selection-start-line="37" selection-start-column="78" selection-end-line="37" selection-end-column="78" />
+            <state vertical-scroll-proportion="-7.214286">
+              <caret line="19" column="5" selection-start-line="19" selection-start-column="5" selection-end-line="19" selection-end-column="5" />
+              <folding>
+                <element signature="e#43#56#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="admin.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/web/admin.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-12.892858">
+              <caret line="19" column="58" selection-start-line="19" selection-start-column="58" selection-end-line="19" selection-end-column="58" />
               <folding />
             </state>
           </provider>
@@ -210,30 +118,25 @@
       <file leaf-file-name="course_linux_ops.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/templates/web/course_linux_ops.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-16.214285">
-              <caret line="900" column="14" selection-start-line="900" selection-start-column="14" selection-end-line="900" selection-end-column="14" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="course_py_devops.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/templates/web/course_py_devops.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-5.690909">
-              <caret line="748" column="62" selection-start-line="748" selection-start-column="62" selection-end-line="748" selection-end-column="62" />
+            <state vertical-scroll-proportion="-9.928572">
+              <caret line="881" column="211" selection-start-line="881" selection-start-column="108" selection-end-line="881" selection-end-column="211" />
               <folding>
-                <element signature="e#29007#29334#0#HTML" expanded="false" />
-                <element signature="e#29335#39501#0#HTML" expanded="false" />
+                <element signature="e#40367#40387#0#HTML" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="logo_black.png" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/statics/img/logo/logo_black.png">
-          <provider selected="true" editor-type-id="images">
-            <state />
+      <file leaf-file-name="course_py_devops.html" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/templates/web/course_py_devops.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.40521327">
+              <caret line="763" column="52" selection-start-line="763" selection-start-column="52" selection-end-line="763" selection-end-column="52" />
+              <folding>
+                <element signature="e#29095#29422#0#HTML" expanded="false" />
+                <element signature="e#29423#39589#0#HTML" expanded="false" />
+              </folding>
+            </state>
           </provider>
         </entry>
       </file>
@@ -243,6 +146,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="HTML File" />
+        <option value="Python Script" />
       </list>
     </option>
   </component>
@@ -252,8 +156,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/web/models.py" />
-        <option value="$PROJECT_DIR$/web/admin.py" />
         <option value="$PROJECT_DIR$/templates/web/temp.html" />
         <option value="$PROJECT_DIR$/templates/web/temp" />
         <option value="$PROJECT_DIR$/templates/test" />
@@ -263,17 +165,20 @@
         <option value="$PROJECT_DIR$/templates/web/how_to_enroll.html" />
         <option value="$PROJECT_DIR$/templates/web/enrollment/faqs.html" />
         <option value="$PROJECT_DIR$/OldboyWebSite/urls.py" />
-        <option value="$PROJECT_DIR$/web/views.py" />
         <option value="$PROJECT_DIR$/templates/web/teachers.html" />
         <option value="$PROJECT_DIR$/templates/web/jobs.html" />
         <option value="$PROJECT_DIR$/statics/css/custom.css" />
         <option value="$PROJECT_DIR$/templates/web/about_us.html" />
         <option value="$PROJECT_DIR$/templates/web/base.html" />
-        <option value="$PROJECT_DIR$/templates/web/course_bigdata.html" />
-        <option value="$PROJECT_DIR$/templates/web/course_linux_ops.html" />
-        <option value="$PROJECT_DIR$/templates/web/course_py_devops.html" />
+        <option value="$PROJECT_DIR$/web/models.py" />
+        <option value="$PROJECT_DIR$/web/admin.py" />
+        <option value="$PROJECT_DIR$/web/utils.py" />
         <option value="$PROJECT_DIR$/templates/web/course_linux_architect.html" />
+        <option value="$PROJECT_DIR$/web/views.py" />
+        <option value="$PROJECT_DIR$/templates/web/course_linux_ops.html" />
+        <option value="$PROJECT_DIR$/templates/web/course_bigdata.html" />
         <option value="$PROJECT_DIR$/templates/web/index.html" />
+        <option value="$PROJECT_DIR$/templates/web/course_py_devops.html" />
       </list>
     </option>
   </component>
@@ -868,13 +773,13 @@
     <frame x="18" y="25" width="1326" height="795" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.14820592" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.1700468" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.18906942" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25258493" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.14684814" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.578125" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
@@ -930,8 +835,9 @@
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="e#326#379#0#HTML" expanded="true" />
-            <element signature="e#24406#27028#0#HTML" expanded="false" />
-            <element signature="e#31449#31474#0#HTML" expanded="true" />
+            <element signature="e#7143#7166#0#HTML" expanded="true" />
+            <element signature="e#23828#26450#0#HTML" expanded="false" />
+            <element signature="e#30871#30896#0#HTML" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -971,7 +877,7 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="10" column="51" selection-start-line="10" selection-start-column="42" selection-end-line="10" selection-end-column="51" />
           <folding>
-            <element signature="e#0#35#0" expanded="false" />
+            <element signature="e#0#35#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -984,25 +890,11 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/web/models.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="11" column="19" selection-start-line="11" selection-start-column="19" selection-end-line="11" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/OldboyWebSite/settings.py">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-1.2735043">
           <caret line="52" column="0" selection-start-line="52" selection-start-column="0" selection-end-line="52" selection-end-column="0" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/admin.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.71311474">
-          <caret line="15" column="44" selection-start-line="15" selection-start-column="44" selection-end-line="15" selection-end-column="44" />
         </state>
       </provider>
     </entry>
@@ -1111,16 +1003,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/web/views.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-2.9642856">
-          <caret line="28" column="40" selection-start-line="28" selection-start-column="40" selection-end-line="28" selection-end-column="40" />
-          <folding>
-            <element signature="e#0#35#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/templates/web/how_to_enroll.html">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="6.107143">
@@ -1180,7 +1062,7 @@
         <state vertical-scroll-proportion="-6.107143">
           <caret line="9" column="0" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
           <folding>
-            <element signature="e#241#276#0#HTML" expanded="true" />
+            <element signature="e#241#276#0#HTML" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1210,22 +1092,6 @@
         <state />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/templates/web/course_bigdata.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-12.142858">
-          <caret line="682" column="0" selection-start-line="682" selection-start-column="0" selection-end-line="688" selection-end-column="14" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/web/course_linux_ops.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-16.214285">
-          <caret line="900" column="14" selection-start-line="900" selection-start-column="14" selection-end-line="900" selection-end-column="14" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/templates/web/base.html">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="25.107143">
@@ -1234,41 +1100,96 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/templates/web/course_py_devops.html">
+    <entry file="file://$PROJECT_DIR$/templates/web/about_us.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-5.690909">
-          <caret line="748" column="62" selection-start-line="748" selection-start-column="62" selection-end-line="748" selection-end-column="62" />
+        <state vertical-scroll-proportion="-32.57143">
+          <caret line="48" column="158" selection-start-line="48" selection-start-column="158" selection-end-line="48" selection-end-column="158" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/admin.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-12.892858">
+          <caret line="19" column="58" selection-start-line="19" selection-start-column="58" selection-end-line="19" selection-end-column="58" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/models.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-6.035714">
+          <caret line="52" column="17" selection-start-line="52" selection-start-column="6" selection-end-line="52" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/utils.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-7.214286">
+          <caret line="19" column="5" selection-start-line="19" selection-start-column="5" selection-end-line="19" selection-end-column="5" />
           <folding>
-            <element signature="e#29007#29334#0#HTML" expanded="false" />
-            <element signature="e#29335#39501#0#HTML" expanded="false" />
+            <element signature="e#43#56#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/views.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-7.464286">
+          <caret line="37" column="98" selection-start-line="37" selection-start-column="98" selection-end-line="37" selection-end-column="98" />
+          <folding>
+            <element signature="e#0#35#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/templates/web/course_linux_architect.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-9.5">
-          <caret line="37" column="78" selection-start-line="37" selection-start-column="78" selection-end-line="37" selection-end-column="78" />
+        <state vertical-scroll-proportion="-6.107143">
+          <caret line="27" column="122" selection-start-line="27" selection-start-column="19" selection-end-line="27" selection-end-column="122" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/templates/web/about_us.html">
+    <entry file="file://$PROJECT_DIR$/templates/web/course_linux_ops.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-12.892858">
-          <caret line="48" column="158" selection-start-line="48" selection-start-column="158" selection-end-line="48" selection-end-column="158" />
+        <state vertical-scroll-proportion="-9.928572">
+          <caret line="881" column="211" selection-start-line="881" selection-start-column="108" selection-end-line="881" selection-end-column="211" />
+          <folding>
+            <element signature="e#40367#40387#0#HTML" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/web/course_bigdata.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-10.857142">
+          <caret line="26" column="122" selection-start-line="26" selection-start-column="122" selection-end-line="26" selection-end-column="122" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/templates/web/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.5784946">
-          <caret line="444" column="66" selection-start-line="444" selection-start-column="66" selection-end-line="444" selection-end-column="66" />
+        <state vertical-scroll-proportion="-5.8727274">
+          <caret line="163" column="147" selection-start-line="163" selection-start-column="147" selection-end-line="163" selection-end-column="147" />
           <folding>
             <element signature="e#326#379#0#HTML" expanded="true" />
-            <element signature="e#24406#27028#0#HTML" expanded="false" />
-            <element signature="e#31449#31474#0#HTML" expanded="true" />
+            <element signature="e#7143#7166#0#HTML" expanded="true" />
+            <element signature="e#23828#26450#0#HTML" expanded="false" />
+            <element signature="e#30871#30896#0#HTML" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/web/course_py_devops.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.40521327">
+          <caret line="763" column="52" selection-start-line="763" selection-start-column="52" selection-end-line="763" selection-end-column="52" />
+          <folding>
+            <element signature="e#29095#29422#0#HTML" expanded="false" />
+            <element signature="e#29423#39589#0#HTML" expanded="false" />
           </folding>
         </state>
       </provider>

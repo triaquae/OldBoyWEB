@@ -12,6 +12,10 @@ class NewGraduatesAdmin(admin.ModelAdmin):
     list_display = ('course_name','semester','graduate_date')
 class PublicClassAdmin(admin.ModelAdmin):
     list_display = ["title","start_date","teacher","img"]
+
+class ConsultantsAdmin(admin.ModelAdmin):
+    list_display = ['qq','name','monday','tuesday','wednesday','thursday','friday','saturday','sunday']
 admin.site.register(models.NotificationLinks,NotificationLinksAdmin)
 admin.site.register(models.PublicClass,PublicClassAdmin)
 admin.site.register(models.NewGraduates,NewGraduatesAdmin)
+admin.site.register(models.Consultants,ConsultantsAdmin)

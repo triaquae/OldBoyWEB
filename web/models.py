@@ -49,3 +49,17 @@ class NewGraduates(models.Model):
 
     def __unicode__(self):
         return self.course_name
+
+class Consultants(models.Model):
+    qq = models.IntegerField(u"qq",unique=True)
+    name = models.CharField(u"招生老师姓名",max_length=32)
+    monday = models.BooleanField(u"周一",default=True)
+    tuesday = models.BooleanField(u"周二",default=True)
+    wednesday = models.BooleanField(u"周三",default=True)
+    thursday = models.BooleanField(u"周四",default=True)
+    friday = models.BooleanField(u"周五",default=True)
+    saturday = models.BooleanField(u"周六",default=True)
+    sunday = models.BooleanField(u"周日",default=True)
+
+    def __unicode__(self):
+        return self.name

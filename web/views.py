@@ -1,6 +1,7 @@
 from django.shortcuts import render
 
 from web import models
+import utils
 # Create your views here.
 
 
@@ -11,11 +12,15 @@ def index(request):
     stu_dairy = news_obj.filter(category="stu_dairy").order_by("priority")[:10]
     recent_public_classes = models.PublicClass.objects.all().order_by("start_date")[:4]
     recent_graduates = models.NewGraduates.objects.all().order_by("graduate_date")[:4]
+
+
+    pick_one_consultant = utils.allowcate_consultant()
     return render(request,'web/index.html',{"school_news":school_news,
                                             "new_classes": new_classes,
                                             "stu_dairy": stu_dairy,
                                             "recent_public_classes": recent_public_classes,
-                                            "recent_graduates": recent_graduates
+                                            "recent_graduates": recent_graduates,
+                                            "consultant": pick_one_consultant
                                             })
 
 
@@ -30,15 +35,17 @@ def jobs(request):
 
 def course_linux_ops(request):
 
-    return render(request,'web/course_linux_ops.html')
+    return render(request,'web/course_linux_ops.html',{"consultant": utils.allowcate_consultant()})
 
 def course_linux_architect(request):
-    return render(request,"web/course_linux_architect.html")
+    pick_one_consultant = utils.allowcate_consultant()
+
+    return render(request,"web/course_linux_architect.html",{"consultant": pick_one_consultant})
 def course_py_devops(request):
-    return render(request,'web/course_py_devops.html')
+    return render(request,'web/course_py_devops.html',{"consultant": utils.allowcate_consultant()})
 
 def course_bigdata(request):
-    return render(request,'web/course_bigdata.html')
+    return render(request,'web/course_bigdata.html',{"consultant": utils.allowcate_consultant()})
 
 def how_to_enroll(request):
     return render(request,'web/how_to_enroll.html')

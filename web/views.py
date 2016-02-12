@@ -25,11 +25,24 @@ def about_us(request):
 def teachers(request):
     return render(request,'web/teachers.html')
 
-
+def jobs(request):
+    return render(request,'web/jobs.html')
 
 def course_linux_ops(request):
 
     return render(request,'web/course_linux_ops.html')
 
+def course_linux_architect(request):
+    return render(request,"web/course_linux_architect.html")
 def course_py_devops(request):
     return render(request,'web/course_py_devops.html')
+
+def course_bigdata(request):
+    return render(request,'web/course_bigdata.html')
+
+def how_to_enroll(request):
+    return render(request,'web/how_to_enroll.html')
+
+
+def enroll_pages(request,page_name):
+    return render(request,'web/enrollment/%s.html' %page_name)

@@ -4,6 +4,8 @@
 }
 
 
+
+
 .default-nav-style-override {
     min-height: 0px;
     margin-bottom: 0px;
@@ -16,7 +18,7 @@
 }
 
 .py-course-bg  {
-	padding: 80px 0;
+	padding: 60px 0;
 	text-align: center;
 	position: relative;
 	margin-bottom: 20px;
@@ -25,7 +27,7 @@
 }
 
 .py-course-bg .col-md-8 {
-    background: rgba(255,255,255,0.7);
+    background: rgba(255, 255, 255, 0.7);
     padding-top: 70px;
     padding-bottom: 70px;
 }
@@ -117,4 +119,102 @@
 	margin-bottom: 20px;
 	background: url(/static/img/course/linux_ops/linux_4.jpg)  ;
 
+}
+
+.architect-course-bg-img {
+    height: 700px;
+	padding: 80px 0;
+	margin-bottom: 20px;
+	background: url(/static/img/bg/architect.jpg) 50% 0 repeat fixed ;
+
+}
+
+.architect-course-bg-img .p_bg {
+    background-color: rgba(255,255,255,0.8);
+    padding: 8px;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+
+.bigdata-course-bg-img {
+    height: 700px;
+	padding: 80px 0;
+	margin-bottom: 20px;
+	background: url(/static/img/bg/bigdata.jpg) 50% 0 repeat fixed  ;
+
+}
+.bigdata-course-bg-img .p_bg {
+    background-color: rgba(255,255,255,0.8);
+    padding: 8px;
+    font-size: 14px;
+    font-weight: bold;
+}
+.bigdata-course-bg-img .head_bg {
+    background-color: rgba(133, 230, 34, 0.85);
+    padding: 8px;
+}
+
+.bigdata-intro{
+    padding:5px;
+}
+.bigdata-intro p{
+    font-size: 13px;
+    padding: 10px;
+}
+
+.pricing-v1-head h3{
+    color: whitesmoke;
+}
+
+.enrollment-bg-img {
+    height: 700px;
+	padding: 80px 0;
+	margin-bottom: 20px;
+	background: url(/static/img/bg/enrollment_bg4.jpg) 50% 0 repeat fixed  ;
+
+}
+.enrollment-bg-img .head_bg {
+    background-color: rgba(34, 230, 224, 0.7);
+    padding: 8px;
+
+}
+.faq_question{
+    color: red;
+}
+
+.teachers-bg-img {
+    height: 700px;
+	padding: 80px 0;
+	margin-bottom: 20px;
+	background: url(/static/img/bg/teachers_bg.jpg) 50% 0 repeat fixed  ;
+
+}
+.teachers-bg-img .p_bg {
+    background-color: rgba(255,255,255,0.8);
+    padding: 8px;
+    font-size: 14px;
+    font-weight: bold;
+}
+.teachers-bg-img .head_bg {
+    background-color: rgba(133, 230, 34, 0.85);
+    padding: 8px;
+}
+
+.jobs-bg-img {
+    height: 700px;
+	padding: 80px 0;
+	margin-bottom: 20px;
+	background: url(/static/img/bg/jobs_bg2.jpg) 100% 0 repeat fixed  ;
+}
+.jobs-bg-img .head_bg {
+    background-color: rgba(255,255,255, 0.7);
+    padding: 8px;
+
+}
+
+.course-summary a:link {
+    text-decoration: none;
+    cursor: auto;
+}{
 }

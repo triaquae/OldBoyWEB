@@ -1,0 +1,99 @@
+{% extends 'web/index.html' %}
+
+{% block page-content-container %}
+<div class="enrollment-bg-img parallaxBg " style="background-position: 50% 16px;"
+     xmlns="http://www.w3.org/1999/html">
+  <div class="container container-below-navbar">
+      <div class="col-md-10 col-md-offset-1 " >
+          <p style="font-size: 100px;color:black" class="head_bg">不学习,你的出路在哪里?</p>
+
+          <p><span class="p_bg">*申请入学需具备12个月以上实际运维工作经验.</span></p>
+
+
+      </div>
+  </div>
+
+</div>
+
+<!-- container-->
+<div class="container content">
+
+    <div class="row">
+        <!--left sidebar-->
+        <div class="col-md-3" style="margin-left: -50px">
+            <ul class="list-group sidebar-nav-v1" id="sidebar-nav">
+                <!-- Typography -->
+                <li class="list-group-item list-toggle active">
+                    <a data-toggle="collapse" data-parent="#sidebar-nav" href="#collapse-typography" aria-expanded="false" >如何报名</a>
+                    <ul id="collapse-typography" class="collapse in" aria-expanded="true" style="height: 255px;">
+                        <li class="active"><a href="enrollment_flow" >报名流程</a></li>
+                        <li >
+                            <a href="enrollment_conditions">报名条件</a>
+                        </li>
+                        <li>
+                            <a href="linux_ops">Linux运维入学基础</a>
+                        </li>
+                        <li><a href="linux_architect">Linux架构师入学基础</a></li>
+                        <li>
+                            <!--span class="badge badge-u">New</span-->
+                            <a href="python_devops">Python自动化开发入学基础</a>
+                        </li>
+                        <li><a href="bigdata">大数据开发入学基础</a></li>
+
+                    </ul>
+                </li>
+                <!-- End Typography -->
+
+                <!-- Buttons UI -->
+                <li class="list-group-item list-toggle active">
+                    <a data-toggle="collapse" data-parent="#sidebar-nav" href="#collapse-buttons"  aria-expanded="false">常见问题</a>
+                    <ul id="collapse-buttons" class="collapse in" aria-expanded="true">
+                        <li><a href="faqs">疑问解答</a></li>
+                        <li><a href="">上课地点</a></li>
+                        <li><a href="">上课方式</a></li>
+                        <li><a href="">住宿环境</a></li>
+                        <li><a href="">新生入学需知</a></li>
+                    </ul>
+                </li>
+                <!-- End Buttons UI -->
+
+
+            </ul>
+            </div>
+        <!--end left sidebar-->
+        <!--right content-->
+        <div class="col-md-9" >
+            <h2 class="title-v2" id="faq-title">报名流程</h2>
+            <div id="content-panel">
+
+            </div>
+
+
+        </div>
+        <!--end right content-->
+    </div>
+
+</div>
+<!-- end container-->
+
+
+{% endblock %}
+
+{% block bottom-js %}
+<script>
+    $(document).ready(function(){
+        $("#sidebar-nav a").click(function(e){
+            e.preventDefault();
+            var href_url = $(this).attr('href');
+            $("#faq-title").html($(this).text());
+            $("#content-panel").load(href_url);
+            $(this).parent().siblings().removeClass("active");
+            $(this).parent().addClass("active");
+        });//end a click
+
+        $("#content-panel").load('enrollment_flow');
+    });//end document ready
+
+</script>
+
+{% endblock %}

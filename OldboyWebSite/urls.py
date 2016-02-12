@@ -23,6 +23,11 @@ urlpatterns = [
     url(r'^$', views.index, name='home_page'),
     url(r'^about_us/$', views.about_us, name='about_us'),
     url(r'^teachers/$', views.teachers, name='teachers'),
+    url(r'^jobs/$', views.jobs, name='jobs'),
     url(r'^course/py_devops/$', views.course_py_devops, name="course_py_devops"),
     url(r'^course/linux_ops/$', views.course_linux_ops, name="course_linux_ops"),
+    url(r'^course/linux_architect/$', views.course_linux_architect, name="linux_architect"),
+    url(r'^course/bigdata/$', views.course_bigdata, name="bigdata"),
+    url(r'^course/enrollment/$', views.how_to_enroll, name="how_to_enroll"),
+    url(r'^course/enrollment/(\w+)/$', views.enroll_pages, name="enroll_pages"),
 ]

@@ -43,6 +43,19 @@
     <link rel="stylesheet" href="/static/css/pages/pricing/pricing_v1.css">
     <!-- CSS Customization -->
     <link rel="stylesheet" href="/static/css/custom.css">
+
+    <!--baidu analysis-->
+    <script>
+        var _hmt = _hmt || [];
+        (function() {
+          var hm = document.createElement("script");
+          hm.src = "//hm.baidu.com/hm.js?fdd868e1b2b662559c4f77ceb307a93c";
+          var s = document.getElementsByTagName("script")[0];
+          s.parentNode.insertBefore(hm, s);
+        })();
+    </script>
+
+    <!--baidu analysis-->
 </head>
 
 
@@ -72,14 +85,12 @@
 
         $(".navbar-nav a").each(function(index,ele){
 
-            console.log($(ele).attr("href"));
             if( $(ele).attr("href") =="{{ request.path }}" ){
 
                 $(ele).parent().addClass("active");
             }
 
         });//end navbar-nav
-        console.log("{{ request.path }}")
 
     });
 </script>

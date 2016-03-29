@@ -27,7 +27,7 @@ def allowcate_consultant():
         if not consultant_list:
             raise Exception(u'当前客服列表为空.请注意!!!')
         pick_one = consultant_list[random.randrange(len(consultant_list))]
-        if pick_one is not None:
+        if pick_one is None:
             raise Exception(u'当前客服列表整形失败')
     except Exception as e:
         logger.warning(e.message)

@@ -127,3 +127,8 @@ STATIC_URL = '/static/'
 STATICFILES_DIRS = (
     "%s/%s" %(BASE_DIR, "statics"),
 )
+
+try:
+    from local_settings import *
+except Exception, e:
+    pass

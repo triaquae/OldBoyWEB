@@ -2,10 +2,10 @@
 __pycache__/
 *.py[cod]
 *$py.class
-
 # C extensions
 *.so
-
+# web settings
+OldboyWebSite/local_settings.py
 #pycharm 
 .idea/
 # Distribution / packaging

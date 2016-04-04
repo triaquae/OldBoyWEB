@@ -2,8 +2,6 @@
 __pycache__/
 *.py[cod]
 *$py.class
-# C extensions
-*.so
 # web settings
 OldboyWebSite/local_settings.py
 #pycharm 
@@ -58,6 +56,7 @@ coverage.xml
 docs/_build/
 
 # PyBuilder
+*.DS_Store
 target/
 JPG/
 pjg/

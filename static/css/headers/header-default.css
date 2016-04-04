@@ -1102,6 +1102,12 @@ body.header-fixed-space-default {
 	height: 100%;
 	margin: 5px 0 10px;
 }
+.header-top a{
+	color: #1c1c1c;
+}
+.header-top a:hover{
+	color: #1c1c1c;
+}
 .header-top-left{
 	height: 100%;
 	margin: 5px 0 10px;

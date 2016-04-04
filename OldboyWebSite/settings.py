@@ -125,7 +125,7 @@ USE_TZ = True
 
 STATIC_URL = '/static/'
 STATICFILES_DIRS = (
-    "%s/%s" %(BASE_DIR, "statics"),
+    "%s/%s" %(BASE_DIR, "static"),
 )
 
 try:

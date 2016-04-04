@@ -1094,3 +1094,22 @@ body.header-fixed-space-default {
 	left: inherit;
 	width: inherit;
 }
+.header-top{
+	height: 30px;
+	background-color: rgba(105, 105, 105, 0.48);
+}
+.header-top p{
+	height: 100%;
+	margin: 5px 0 10px;
+}
+.header-top-left{
+	height: 100%;
+	margin: 5px 0 10px;
+}
+.header-top {
+	min-width: 1200px;
+}
+.header-top-1 .logo img{
+	margin-top: -6px;
+	height: 70px;
+}

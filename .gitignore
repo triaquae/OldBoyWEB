@@ -7,7 +7,7 @@ __pycache__/
 # web settings
 OldboyWebSite/local_settings.py
 #pycharm 
-.idea/
+.idea/ 
 # Distribution / packaging
 .Python
 env/
@@ -59,3 +59,5 @@ docs/_build/
 
 # PyBuilder
 target/
+JPG/
+pjg/

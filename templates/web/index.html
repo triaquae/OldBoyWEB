@@ -42,8 +42,8 @@
                                 </a>
                             </li>
                             <!-- 课程中心 -->
-                            <li id="page-scroll">
-                                <a href="javascript:void(0);" class="dropdown-toggle" data-toggle="dropdown">
+                            <li class="page-scroll">
+                                <a href="{% url 'classes' %}">
                                     课程中心
                                 </a>
                             </li>
@@ -144,7 +144,7 @@
                                     <div class="item active" onclick="ff">
                                         <img alt="" style="cursor: pointer" onclick="" src="/static/img/banner/01.png">
                                     </div>
-                                    <div class="item">
+                                    <div class="item" >
                                         <img alt="" src="/static/img/banner/01.png">
 
                                     </div>
@@ -170,74 +170,89 @@
                                 </div>
                             </div>
                      </div>
+                <div style="margin-top: 20px"></div>
+                <div class="container-fluid" style="margin-left: -15px">
+                    <div class="row-fluid">
+                        <div class="span12">
+                            <div class="tabbable" id="tabs-557620">
+                                <ul class="nav nav-tabs">
+                                    <li>
+                                        <h2>培训课程</h2>
+                                    </li>
+                                    <li class="active" style="margin-left: 10px">
+                                        <a href="#panel-01" data-toggle="tab">Linux运维</a>
+                                    </li>
+                                    <li >
+                                        <a href="#panel-02" data-toggle="tab">Python开发</a>
+                                    </li>
+                                    <li >
+                                        <a href="#panel-03" data-toggle="tab">大数据工程</a>
+                                    </li>
+                                    <li >
+                                        <a href="#panel-04" data-toggle="tab">系统架构</a>
+                                    </li>
+                                </ul>
+                                <div style="margin-top: 20px"></div>
+                                <div class="tab-content">
+                                    <div class="tab-pane row active" id="panel-01">
+                                        <div class="col-lg-7">
+                                            <img src="/static/img/class/11.png">
+                                        </div>
+                                        <div class="col-lg-5">
+                                            <h4>Linux 云计算集群架构师 [就业课程]</h4>
+                                            <h4>Linux 云计算集群架构师 [就业课程]</h4>
+                                            <h4>Linux 云计算集群架构师 [就业课程]</h4>
+                                            <h4>Linux 云计算集群架构师 [就业课程]</h4>
 
+                                        </div>
+                                    </div>
+                                    <div class="tab-pane row" id="panel-02">
+                                        <div class="col-lg-7">
+                                            <img src="/static/img/class/11.png">
+                                        </div>
+                                        <div class="col-lg-5">
+                                            <h3>Linux 云计算集群架构师 [就业课程]</h3>
+                                            <h3>全日制班/周末班</h3>
+                                            <h3>签到18万年薪双保就业协议</h3>
+                                            <h3>唯一真正的云计算架构师课程</h3>
+                                            <h3>百万级服务器案例,全UNIX多平台实操</h3>
+                                            <h3>百万级服务器案例,全UNIX多平台实操</h3>
 
-            <!-- 课程 第一行-->
-            <div class="row margin-bottom-30 course-summary" style="margin-top: 20px">
-                <h3 style="margin-left: 12px">核心必学课程</h3>
-                <div class="col-md-4">
-                    <div class="service">
-                        <i class="fa fa-desktop service-icon"></i>
-                        <div class="desc">
-                            <h4><a href="{% url 'course_linux_ops' %}">Linux中高级运维课程</a></h4>
-                            <p>成为合格运维工程师的必学课程,学员平均就业工资10K</p>
+                                        </div>
+                                    </div>
+                                    <div class="tab-pane row" id="panel-03">
+                                        <div class="col-lg-7">
+                                            <img src="/static/img/class/11.png">
+                                        </div>
+                                        <div class="col-lg-5">
+                                            <h4>Python 自动化运维专业 [就业课程]</h4>
+                                            <h4>跟三流老师学一流技术</h4>
+                                            <h4>Linux 云计算集群架构师 [就业课程]</h4>
+                                            <h4>Linux 云计算集群架构师 [就业课程]</h4>
+
+                                        </div>
+                                    </div>
+                                    <div class="tab-pane row" id="panel-04">
+                                        <div class="col-lg-7">
+                                            <img src="/static/img/class/11.png">
+                                        </div>
+                                        <div class="col-lg-5">
+                                            <h4>Linux 云计算集群架构师 [就业课程]</h4>
+                                            <h4>Linux 云计算集群架构师 [就业课程]</h4>
+                                            <h4>Linux 云计算集群架构师 [就业课程]</h4>
+                                            <h4>Linux 云计算集群架构师 [就业课程]</h4>
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row-fluid">
+                                <div class="span12">
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
-                <div class="col-md-4">
-                    <div class="service">
-                        <i class="fa fa-cogs service-icon"></i>
-                        <div class="desc">
-                            <h4><a href="{% url 'course_py_devops' %}">Python自动化开发课程</a></h4>
-                            <p>高级运维\自动化开发人员必学课程,深入讲解各种自动化工具\平台的开发知识,毕业后工资15K+</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="service">
-                        <i class="fa fa-rocket service-icon"></i>
-                        <div class="desc">
-                            <h4><a href="{% url 'linux_architect' %}">Linux架构师课程</a></h4>
-                            <p>高级运维\自动化开发人员必学课程,内容包括各种大型架构\集群\openstack\docker等时下热门技术,学员年薪平均25万+</p>
-                        </div>
-                    </div>
-                </div>
-
-            </div> <!-- end 课程 第一行-->
-            <!-- 课程 第二行-->
-            <div class="row margin-bottom-30">
-                <h3 style="margin-left: 12px">当下技术热门</h3>
-
-                <div class="col-md-4">
-                    <div class="service">
-                        <i class="fa  fa-cloud-upload service-icon"></i>
-                        <div class="desc">
-                            <h4><a href="{% url 'bigdata' %}">大数据开发课程</a></h4>
-                            <p>大数据挖掘\分析\Java\Hadoop\Spark\Hbase\Storm\Scala等技术深入讲解,毕业学员起薪15W/年</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="service">
-                        <i class="fa fa-star service-icon"></i>
-                        <div class="desc">
-                            <h4>Python全栈开发工程师</h4>
-                            <p>深入学习Python后端开发,\前端JS\CSS\HTML Web开发知识,全程包括购物网站\办公系统\聊天软件等数10个开发项目实战</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="service">
-                        <i class="fa fa-rocket service-icon"></i>
-                        <div class="desc">
-                            <h4>云计算专题开发</h4>
-                            <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus ...</p>
-                        </div>
-                    </div>
-                </div>
-            </div> <!-- end 课程 第二行-->
-
-
 
                 </div>
                 <!-- End Left Sidebar -->
@@ -372,8 +387,12 @@
                         <!--end 就业薪资-->
                         <!--师兄说-->
                         <div class="col-lg-3 senior ">
-                            <h3>师兄说</h3>
-                            <p>sss</p>
+                            <h2>师兄说</h2>
+                            <h4><a>1.感想老男孩带我进入运维行业</a></h4>
+                            <h4><a>1.感想老男孩带我进入运维行业</a></h4>
+                            <h4><a>1.感想老男孩带我进入运维行业</a></h4>
+                            <h4><a>1.感想老男孩带我进入运维行业</a></h4>
+                            <h4><a>1.感想老男孩带我进入运维行业</a></h4>
                         </div>
                         <!--end 师兄说-->
                     </div><!--end 就业薪资&师兄说-->
@@ -410,7 +429,14 @@
                     </div>
                     <div class="row class">
                         <div class="col-lg-3">
-                            
+                            <h3>牛人带你涨姿势</h3>
+                            <h1>网络学习中心</h1>
+                            <h4><a>1.我毕业能拿多少钱的工资?</a></h4>
+                            <h4><a>1.我毕业能拿多少钱的工资?</a></h4>
+                            <h4><a>1.我毕业能拿多少钱的工资?</a></h4>
+                            <h4><a>1.我毕业能拿多少钱的工资?</a></h4>
+                            <h4><a>1.我毕业能拿多少钱的工资?</a></h4>
+                            <h4><a>1.我毕业能拿多少钱的工资?</a></h4>
                         </div>
                         <div class="col-lg-3">
                             <div> <img src="/static/img/class/01.png"></div>

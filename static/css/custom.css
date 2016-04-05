@@ -218,3 +218,11 @@
     cursor: auto;
 }{
 }
+
+.classes-braner {
+    margin-top: 25px;
+    marker-end: 25px;
+    background-color: #5e5e5e;
+    color: white;
+    height: 35px;
+}

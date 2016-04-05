@@ -30,6 +30,9 @@ def about_us(request):
 def teachers(request):
     return render(request,'web/teachers.html')
 
+def classes(request):
+    return render(request,'web/classes.html')
+
 def jobs(request):
     return render(request,'web/jobs.html')
 

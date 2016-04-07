@@ -226,3 +226,17 @@
     color: white;
     height: 35px;
 }
+.classes-png {
+    margin: 5px;
+}
+.classes-png img{
+    width: 100%;
+    height: auto;
+
+}
+.gray-bg{
+    background-color: rgba(105, 105, 105, 0.05);
+}
+.white-bg{
+    background-color: white;
+}

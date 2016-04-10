@@ -1,0 +1,809 @@
+{% extends 'web/base.html' %}
+{% load custom_tags %}
+{% block page-container %}
+
+
+<div class="wrapper">
+    <!--=== Header ===-->
+
+        <!-- head-1-->
+        <div class="row header-top">
+            <div class="col-lg-6">
+                <div class="col-lg-2">
+                </div>
+                <div class="col-lg-10">
+                    <p>专注运维领域11年-铸就中国精英Linux运维培训第一品牌</p>
+                </div>
+            </div>
+            <div class="col-lg-6">
+                <div class="col-lg-3"></div>
+                <div class="col-lg-9 header-top-left">
+                    <a>报名流程 |</a>
+                    <a>常见问题 |</a>
+                    <a>在线咨询 |</a>
+                    <a>联系我们 |</a>
+                    <a>关于我们</a>
+                </div>
+            </div>
+        </div>
+        <div class="container ">
+            <div class="row">
+                <!-- Logo -->
+                <a class="logo col-lg-2"  href="index.html">
+                    <img  style="margin: 11px 0;margin-left: -8px;height: 50px" src="/static/img/logo/logo_gray.png" alt="Logo">
+                </a>
+                 <div class="col-lg-10">
+                        <ul class="nav navbar-nav  ">
+
+                            <li class="page-scroll">
+                                <a href="{% url 'home_page' %}">
+                                    <span data-hover="About">网站首页</span>
+                                </a>
+                            </li>
+                            <!-- 课程中心 -->
+                            <li id="page-scroll">
+                                <a href="javascript:void(0);" class="dropdown-toggle" data-toggle="dropdown">
+                                    课程中心
+                                </a>
+                            </li>
+                            <!-- End 课程中心 -->
+                            <!-- 师资中心 -->
+                            <li class="dropdown">
+                                <a href="javascript:void(0);" class="dropdown-toggle" data-toggle="dropdown">
+                                    师资中心
+                                </a>
+                            </li>
+                            <!-- End 师资中心 -->
+
+                            <!-- 技术社区 -->
+                            <li class="page-scroll">
+                                <a href="{% url 'teachers' %}" >
+                                    技术社区
+                                </a>
+
+                            </li>
+                            <!-- End 技术社区 -->
+                            <!-- 网络学习中心 -->
+                            <li class="page-scroll">
+                                <a href="{% url 'jobs' %}" >
+                                    网络学习中心
+                                </a>
+                            </li>
+                            <!-- End 网络学习中心 -->
+
+
+
+                        </ul>
+                    </div>
+                <!-- Toggle get grouped for better mobile display -->
+                <!--
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-responsive-collapse">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="fa fa-bars"></span>
+                </button>
+                -->
+                <!-- End Toggle -->
+            </div>
+        </div><!--/end container-->
+
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <!--div class="collapse navbar-collapse mega-menu navbar-responsive-collapse " -->
+
+    </div>
+    <!--=== End Header ===-->
+
+    <!--在线咨询框-->
+
+    <i class="style-switcher-btn fa fa-user hidden-xs online-consule-btn "  style="top:200px;background:#e74c3c"> 在线咨询</i>
+    <div class="style-switcher animated fadeInRight" style="display: block;top:200px">
+        <div class="style-swticher-header">
+            <div class="style-switcher-heading">在线咨询</div>
+            <div class="theme-close"><i class="icon-close"></i></div>
+        </div>
+
+        <div class="style-swticher-body bg-color-light-grey">
+            <!-- Theme Colors -->
+            <div class="style-switcher-heading">课程顾问老师</div>
+            <ul class="list-unstyled">
+                <p style="font-weight:bold">
+		        <a href="http://wpa.qq.com/msgrd?v=3&amp;uin={{ consultant.qq }}&amp;site=qq&amp;menu=yes" target="_blank">
+                    <i class="fa  fa-qq"></i>在线咨询老师<br>
+                </a>
+                </p>
+            </ul>
+            <hr/>
+            <!-- Theme Skins -->
+            <div class="style-switcher-heading">电话咨询</div>
+            <p style="color:whitesmoke">全国统一热线:400-800-8001</p>
+
+            <hr>
+
+            <!-- Layout Styles -->
+            <div class="style-switcher-heading">零费用入学</div>
+            <p class="row no-col-space">
+
+                <p>
+                    <button><a href="http://wpa.qq.com/msgrd?v=3&amp;uin={{ consultant.qq }}&amp;site=qq&amp;menu=yes" target="_blank" >申请0学费入学</a></button>
+                </p>
+            </div>
+
+
+
+        </div>
+
+    <!--end在线咨询框-->
+
+    <div> <!--page content container-->
+    {% block page-content-container %}
+        <!--=== Content Part ===-->
+        <div class="container content ">
+
+            <div class="row blog-page container-below-navbar" >
+
+                <!-- Left Sidebar -->
+                <div class="col-md-9">
+
+
+                     <div class="blog-img">
+                            <div class="carousel slide carousel-v1" id="myCarousel"  style="margin-top: -10px">
+                                <div class="carousel-inner">
+                                    <div class="item active" onclick="ff">
+                                        <img alt="" style="cursor: pointer" onclick="" src="/static/img/bg/python_fullstack2.png">
+                                    </div>
+                                    <div class="item">
+                                        <img alt="" src="/static/img/bg/home_page_bg4.jpg">
+
+                                    </div>
+                                    <div class="item">
+                                        <img alt="" src="/static/img/bg/home_page_bg2.png">
+                                        <!--div class="carousel-caption">
+                                            <p>Justo cras odio apibus ac afilisis lingestas de.</p>
+                                        </div-->
+                                    </div>
+                                    <div class="item">
+                                        <img alt="" src="/static/img/bg/home_page_bg3.png">
+
+                                    </div>
+                                </div>
+
+                                <div class="carousel-arrow">
+                                    <a data-slide="prev" href="#myCarousel" class="left carousel-control">
+                                        <i class="fa fa-angle-left"></i>
+                                    </a>
+                                    <a data-slide="next" href="#myCarousel" class="right carousel-control">
+                                        <i class="fa fa-angle-right"></i>
+                                    </a>
+                                </div>
+                            </div>
+                     </div>
+
+
+            <!-- 课程 第一行-->
+            <div class="row margin-bottom-30 course-summary" style="margin-top: 20px">
+                <h3 style="margin-left: 12px">核心必学课程</h3>
+                <div class="col-md-4">
+                    <div class="service">
+                        <i class="fa fa-desktop service-icon"></i>
+                        <div class="desc">
+                            <h4><a href="{% url 'course_linux_ops' %}">Linux中高级运维课程</a></h4>
+                            <p>成为合格运维工程师的必学课程,学员平均就业工资10K</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="service">
+                        <i class="fa fa-cogs service-icon"></i>
+                        <div class="desc">
+                            <h4><a href="{% url 'course_py_devops' %}">Python自动化开发课程</a></h4>
+                            <p>高级运维\自动化开发人员必学课程,深入讲解各种自动化工具\平台的开发知识,毕业后工资15K+</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="service">
+                        <i class="fa fa-rocket service-icon"></i>
+                        <div class="desc">
+                            <h4><a href="{% url 'linux_architect' %}">Linux架构师课程</a></h4>
+                            <p>高级运维\自动化开发人员必学课程,内容包括各种大型架构\集群\openstack\docker等时下热门技术,学员年薪平均25万+</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div> <!-- end 课程 第一行-->
+            <!-- 课程 第二行-->
+            <div class="row margin-bottom-30">
+                <h3 style="margin-left: 12px">当下技术热门</h3>
+
+                <div class="col-md-4">
+                    <div class="service">
+                        <i class="fa  fa-cloud-upload service-icon"></i>
+                        <div class="desc">
+                            <h4><a href="{% url 'bigdata' %}">大数据开发课程</a></h4>
+                            <p>大数据挖掘\分析\Java\Hadoop\Spark\Hbase\Storm\Scala等技术深入讲解,毕业学员起薪15W/年</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="service">
+                        <i class="fa fa-star service-icon"></i>
+                        <div class="desc">
+                            <h4>Python全栈开发工程师</h4>
+                            <p>深入学习Python后端开发,\前端JS\CSS\HTML Web开发知识,全程包括购物网站\办公系统\聊天软件等数10个开发项目实战</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="service">
+                        <i class="fa fa-rocket service-icon"></i>
+                        <div class="desc">
+                            <h4>云计算专题开发</h4>
+                            <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus ...</p>
+                        </div>
+                    </div>
+                </div>
+            </div> <!-- end 课程 第二行-->
+
+
+
+                </div>
+                <!-- End Left Sidebar -->
+
+                <!-- Right Sidebar -->
+                <div class="col-md-3 magazine-page" style="margin-top: -10px;margin-left: -20px;">
+
+
+                    <div class="panel panel-red">
+                        <div class="panel-heading">
+                            <h4 style="margin-left: -8px;" class="panel-title"><i class="fa fa-bullhorn"></i> 最新公告</h4>
+                        </div>
+                        <div class="panel-body">
+                            <ul class="list-unstyled" style="margin-left: -8px;">
+                                {% for news in school_news %}
+                                <li class="list-group-item-"><span class="color-red">{{ news.get_category_display }}: </span>{{ news.title }}</li>
+
+                                {% endfor %}
+
+
+                            </ul>
+
+                        </div>
+                    </div>
+
+
+
+                    <!-- Posts -->
+                    <div class="posts margin-bottom-40">
+                        <div class="headline headline-md">
+
+                            <h4><i class="fa fa-calendar-check-o"></i>最新开班</h4>
+
+                        </div>
+
+
+                         <ul class="list-unstyled" >
+                            {% for new_class in new_classes %}
+                            <li class="list-group-item-">
+                                <span>{{ new_class.class_open_date |date:"m.d"}}号 </span>
+                                <span class="color-orange">{{ new_class.title }}</span></li>
+                            </li>
+                            {% endfor %}
+
+                        </ul>
+
+                    </div><!--/posts-->
+                    <!-- End Posts -->
+
+
+                    <!-- Tabs Widget -->
+                    <div class="headline headline-md"><h4><i class="fa  fa-angellist"></i>学员蜕变日记</h4></div>
+                    <div class="right-side-panel">
+                        {% for dairy in stu_dairy %}
+                        <p><a href="{{ dairy.link }}" target="_blank">{{ dairy.title }}</a></p>
+                        <p>{{ dairy.date|date:"m.d H:i" }}</p>
+                        <hr/>
+                        {% endfor %}
+
+
+                    </div>
+                    <!-- End Tabs Widget -->
+
+
+                    <!-- Blog Latest Tweets -->
+
+                    <!--div class="blog-twitter margin-bottom-40">
+                        <div class="headline headline-md"><h2>Latest Tweets</h2></div>
+                        <div class="blog-twitter-inner">
+                            <i class="fa fa-twitter"></i>
+                            <a href="#">@htmlstream</a>
+                            At vero eos et accusamus et iusto odio dignissimos.
+                            <a href="#">http://t.co/sBav7dm</a>
+                            <span>5 hours ago</span>
+                        </div>
+                        <div class="blog-twitter-inner">
+                            <i class="fa fa-twitter"></i>
+                            <a href="#">@htmlstream</a>
+                            At vero eos et accusamus et iusto odio dignissimos.
+                            <a href="#">http://t.co/sBav7dm</a>
+                            <span>5 hours ago</span>
+                        </div>
+                        <div class="blog-twitter-inner">
+                            <i class="fa fa-twitter"></i>
+                            <a href="#">@htmlstream</a>
+                            At vero eos et accusamus et iusto odio dignissimos.
+                            <a href="#">http://t.co/sBav7dm</a>
+                            <span>5 hours ago</span>
+                        </div>
+                    </div-->
+                    <!-- End Blog Latest Tweets -->
+
+                </div>
+                <!-- End Right Sidebar -->
+            </div><!--/row-->
+
+            <div class="row blog-page " >
+                <div class="col-md-12">
+                    <!--最新就业-->
+                    <div class="headline margin-bottom-35"><h3>最新就业</h3></div>
+                        <div class="row">
+                            {% for graudate_class in recent_graduates %}
+
+                            <div class="col-md-3">
+                                <div class="thumbnails thumbnail-style thumbnail-kenburn">
+                                    <div class="thumbnail-img">
+                                        <div class="overflow-hidden">
+                                            <img class="img-responsive" src="{% convert_img_src graudate_class.img %}" alt="">
+                                        </div>
+                                        <a class="btn-more hover-effect"   href="#">平均工资<span style="font-size: 23px">{{ graudate_class.average_salary }}</span> </a>
+                                    </div>
+                                    <div class="caption">
+                                        <h3><a class="hover-effect" href="#"><span class="color-orange">[{{ graudate_class.semester }}期]</span>{{ graudate_class.course_name }}</a></h3>
+                                        <p><b>毕业日期: </b> {{ graudate_class.graduate_date |date:"m-d"}}</p>
+                                        <p><b>班级人数: </b> {{ graudate_class.stu_num }}</p>
+                                    </div>
+                                </div>
+                            </div>
+                            {% endfor %}
+
+                        </div>
+
+
+                    <!--end 最新就业-->
+                    <!--公开课&视频-->
+
+                    <h3>公开课&技术视频</h3>
+
+                    <div class="tab-v1">
+                        <ul class="nav nav-tabs">
+                                <li class="active"><a href="#latest_public_class" data-toggle="tab" aria-expanded="true">最新公开课</a></li>
+                                <li class=""><a href="#free_videos" data-toggle="tab" aria-expanded="false">免费视频</a></li>
+
+                        </ul>
+                        <div class="tab-content">
+                                <div class="tab-pane fade active in" id="latest_public_class">
+
+                                    <!--公开课-->
+                                        <div class="row">
+                                            {% for public_class in recent_public_classes %}
+
+                                            <div class="col-md-3">
+                                                <div class="thumbnails thumbnail-style thumbnail-kenburn">
+                                                    <div class="thumbnail-img">
+                                                        <div class="overflow-hidden">
+                                                            <img class="img-responsive" src="{% convert_img_src public_class.img %}" alt="">
+                                                        </div>
+                                                        <a class="btn-more hover-effect" href="#">免费报名 +</a>
+                                                    </div>
+                                                    <div class="caption">
+                                                        <h3><a class="hover-effect" href="#">{{ public_class.title }}</a></h3>
+                                                        <p><b>开课: </b>{{ public_class.start_date|date:"m.d H:i"  }}</p>
+                                                        <p><b>讲师: </b>{{ public_class.teacher }}</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            {% endfor %}
+
+                                        </div>
+                                    <!--end 公开课-->
+
+                                </div>
+                                <div class="tab-pane fade" id="free_videos">
+                                    <!--免费视频-->
+                                        <div class="row">
+                                            <div class="col-md-4">
+                                                <div class="thumbnails thumbnail-style thumbnail-kenburn">
+                                                    <div class="thumbnail-img">
+                                                        <div class="overflow-hidden">
+                                                            <img class="img-responsive" src="/static/img/home/linux_video.jpg" alt="">
+                                                        </div>
+                                                        <a class="btn-more hover-effect" href="#">下载 +</a>
+                                                    </div>
+                                                    <div class="caption">
+                                                        <h3><a class="hover-effect" href="#">Linux运维+架构视频</a></h3>
+                                                        <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, justo sit amet risus etiam porta sem.</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-4">
+                                                <div class="thumbnails thumbnail-style thumbnail-kenburn">
+                                                    <div class="thumbnail-img">
+                                                        <div class="overflow-hidden">
+                                                            <img class="img-responsive" src="/static/img/home/python_video.jpg" alt="">
+                                                        </div>
+                                                        <a class="btn-more hover-effect" href="#">下载 +</a>
+                                                    </div>
+                                                    <div class="caption">
+                                                        <h3><a class="hover-effect" href="#">Python自动化+Django视频</a></h3>
+                                                        <p>包含详细的Python基础教程,WEB开发基础及Django WEB框架知识</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-4">
+                                                <div class="thumbnails thumbnail-style thumbnail-kenburn">
+                                                    <div class="thumbnail-img">
+                                                        <div class="overflow-hidden">
+                                                            <img class="img-responsive" src="/static/img/home/bigdata_video.jpg" alt="">
+                                                        </div>
+                                                        <a class="btn-more hover-effect" href="#">下载 +</a>
+                                                    </div>
+                                                    <div class="caption">
+                                                        <h3><a class="hover-effect" href="#">Java&大数据开发视频</a></h3>
+                                                        <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, justo sit amet risus etiam porta sem.</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    <!--end 免费视频-->
+                                </div>
+
+                        </div>
+                    </div>
+
+                    <!--end 公开课&视频-->
+                    <!-- 学员如何说-->
+                    <div class="headline margin-bottom-35" style="margin-top: 35px"><h2>听听老学员怎么说?</h2>
+                    </div>
+                    <p>*为尊重学员隐私,此处不放学员真实照片</p>
+                    <div class="row margin-bottom-20">
+                        <div class="col-sm-4 sm-margin-bottom-20">
+                            <div class="profile-blog">
+                                <img class="rounded-x" src="/static/img/stu/s1.jpg" alt="">
+                                <div class="name-location">
+                                    <strong>郑东旭,</strong>
+                                    <span>高级系统工程师 | <b>小米公司</b></span>
+                                </div>
+                                <div class="clearfix margin-bottom-20"></div>
+                                <p>时至今日，做为一名小米运维工程师，我首先要感谢“老男孩”老师，带我走到linux的世界 ，让我打下了牢固的基础，能把学习的内容运用到企业中去。其次我要感谢alex老师，在python的课程中，讲的生动，深入。让我有机会参加开源软件的开发，使我在计算机生涯中与众不同。在未来，我希望能有更多更好的东西和大家一起分享，相信“老男孩”会给你指引前进的方向。</p>
+                                <hr>
+                            </div>
+                        </div>
+                        <div class="col-sm-4 sm-margin-bottom-20">
+                            <div class="profile-blog">
+                                <img class="rounded-x" src="/static/img/stu/s2.jpg" alt="">
+                                <div class="name-location">
+                                    <strong>刘志强,</strong>
+                                    <span>运维工程师 | <b>腾讯</b></span>
+                                </div>
+                                <div class="clearfix margin-bottom-20"></div>
+                                <p>linux知识面的广而深,是我们自学人无法预知的。我一直很为自己的自学能力为傲，但是自学了2年的linux，一直没有实践，还是无法从事相关的工作。而跟“老男孩”老师学习后，我很快找到了相关工作，并且毕业后就找到了7500的腾讯运维。让我很兴奋，老男孩是最棒的，我会一直带着老师的精神，认真工作下去。</p>
+                                <hr>
+                            </div>
+                        </div>
+                        <div class="col-sm-4 sm-margin-bottom-20">
+                            <div class="profile-blog">
+                                <img class="rounded-x" src="/static/img/stu/s3.jpg" alt="">
+                                <div class="name-location">
+                                    <strong>王伟,</strong>
+                                    <span>运维工程师 | <b>爱慕内衣电商部</b></span>
+                                </div>
+                                <div class="clearfix margin-bottom-20"></div>
+                                <p>其实我关注python学习已经1年多了，但是苦于自学没效率等原因进展缓慢。后来看到51CTO学院上的老男孩python自动化培训视频，觉得不错，2015年7月份就果断报了10期面授培训班，经过4个多月的学习，在alex老师风趣幽默的讲课方式下（每节课都有心灵鸡汤），以及深入浅出的讲解实际开源项目案例（CrazyEye和MadKing项目等），让我了解到运维工程师也可以做这么高大上的事；这几个开源项目，经过自己DIY后完全可以应用于公司线上应用，极大的提高了线上服务器的安全性，也极大的提高了工作效率。</p>
+                                <hr>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row margin-bottom-20">
+                        <div class="col-sm-4 sm-margin-bottom-20">
+                            <div class="profile-blog">
+                                <img class="rounded-x" src="/static/img/stu/s5.jpg" alt="">
+                                <div class="name-location">
+                                    <strong>王巧妹,</strong>
+                                    <span>自动化开发工程师 | <b>好大夫在线</b></span>
+                                </div>
+                                <div class="clearfix margin-bottom-20"></div>
+                                <p>我以前一直坚信学python自学就行。但是当自己自学时，感觉举步维艰，
+
+                                    太耗费时间，只能学到零散的基础知识，
+
+                                    遇到一个问题可能要拖1个月都解决不了，也没有人可以问。
+
+                                    所以决心跟着alex老师学习python，再跟着做作业。
+
+                                    自己的学习python的进度和深度同步直线上升。
+
+                                    一期的课程从头学下来，无论是课程内容还是鸡汤，老师都讲的细致、全面、精辟。
+
+                                    一天的课老师不辞辛苦的从早讲到晚上，但是教学质量却非常高。
+
+                                    之前遇到的很多无法解决的python问题，上课老师都讲到了。
+
+                                    老师的讲课特点是循序渐进，并且把可能遇到的坑都仔细讲一遍。
+
+                                    最佩服老师的是：
+
+                                    1、一个复杂的问题，老师不是直接跟你讲解决的结果，而是从浅入深的一步步和大家讨论不同的解决方案，
+
+                                    和每个方案的出现的问题，循序渐进的引导大家得出最优的解决方案。这样同学们跟着思考，
+
+                                    也能更深刻的熟悉原理，并能举一反三。
+
+                                    2、老师总是模仿出错，然后引导大家一步步解决错误。这样大家遇到类似的问题，就能跳过坑了。
+
+                                    3、我是一个在工作和学习中爱做笔记的人，只会记下精髓部分。但是当我课下把老师的视频再听一遍的时候，
+
+                                    几乎把老师的讲课每一句话都记下笔记了。因为老师讲课每句话都是非常重要逻辑点或知识点。
+
+                                    4、老师的鸡汤非常棒，职业规划上，告诉大家要有危机感，而人生需及时行乐。
+
+                                    总之，无论是人生方面，还是技术方面，alex老师都是我的良师益友。
+
+                                    感谢老师的悉心培养和教导！
+                                    </p>
+                                <hr>
+                            </div>
+                        </div>
+                        <div class="col-sm-4 sm-margin-bottom-20">
+                            <div class="profile-blog">
+                                <img class="rounded-x" src="/static/img/stu/s4.jpg" alt="">
+                                <div class="name-location">
+                                    <strong>赵高龙,</strong>
+                                    <span>自动化开发工程师 | <b>...</b></span>
+                                </div>
+                                <div class="clearfix margin-bottom-20"></div>
+                                <p>我在老男孩培训已经半年了，自己的能力提高的程度令我自己都很吃惊，
+                                老师讲解的每一细节都很细心，不仅能力卓越而且还特别幽默，在学习的过程中很快的掌握技术细节，
+                                每天不仅有很有营养的鸡汤，让我们激动不已，而且我对自己的未来有了新的认识，
+                                我的未来又重新规划，有了新的目标，让我激动不已，
+                                这次不仅能认识很多朋友，让自己的朋友圈又添加了新的色彩，
+                                这次不只是培训技术，更重要的是教会如何活下去，如何精彩的活下去，如何辉煌的活下去。
+                                写到这里我很感激，也很激动，我希望把自己的感触分享给大家。
+                                </p>
+                                <hr>
+                            </div>
+                        </div>
+                        <div class="col-sm-4 sm-margin-bottom-20">
+                            <div class="profile-blog">
+                                <img class="rounded-x" src="/static/img/stu/s6.jpg" alt="">
+                                <div class="name-location">
+                                    <strong>黄坤,</strong>
+                                    <span>运维工程师 | <b>普惠金融</b></span>
+                                </div>
+                                <div class="clearfix margin-bottom-20"></div>
+                                <p>在老男孩马上学完了python，说实话，原来也没有什么开发基础，以为学习会很难，可跟alex学的第一节课就被他的讲课风格给吸引了，把本来枯燥的学习过程用他特有的嬉笑怒骂方式给讲出来，很有吸引力，课堂气氛非常活跃，用他独有的风格引领大家一步步学习。并且课上讲的自动化运维项目也都是实际工作中能够马上用得着的项目，可以说只要认真学会拿过来稍微改改就可以用在自己公司，感谢alex，感谢老男孩培训。最后一句话总结：人生苦短，我用Python</p>
+                                <hr>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!--end 学员如何说-->
+
+
+                </div> <!--end col-md-12-->
+
+            </div><!--/row-->
+
+
+        </div><!--/container-->
+        <!--=== End Content Part ===-->
+
+            <!-- 我们就是最NB的IT实战教育机构-->
+        <div class="full-w-block">
+            <div class="container">
+                <div class="row">
+                    <h1 style="color: whitesmoke">所有面授课程均为14天试学 , 不满意无条件退款 , 承诺来源于对课程质量的自信!</h1>
+
+                </div>
+            </div>
+        </div>
+
+            <!--end  我们就是最NB的IT实战教育机构-->
+        <!--下半部分container-->
+        <div class="container content">
+
+            <!--row-->
+            <div class="row blog-page">
+
+                <!-- 为何选择我们-->
+                <div class="headline margin-bottom-35" style="margin-top: 35px"><h2>为何选择老男孩教育?</h2></div>
+                <div class="row">
+                    <div class="col-md-12">
+
+                        <div class="row">
+                            <div class="col-sm-6">
+                                <div class="margin-bottom-30">
+                                    <i class="icon-custom rounded-x icon-sm icon-bg-u icon-bell"></i>
+                                    <div class="service-desc">
+                                        <h2>课程质量最高</h2>
+                                        <p>专注运维\自动化开发培训多年,课程各种被模仿,从未被超越</p>
+                                    </div>
+                                </div>
+                                <div class="margin-bottom-30">
+                                    <i class="icon-custom rounded-x icon-sm icon-bg-u icon-like"></i>
+                                    <div class="service-desc">
+                                        <h2>学员平均就业工资最高</h2>
+                                        <p>仅基础课程平均就业工资就已达8-12K,高阶课程平均就业年薪20-30W</p>
+                                    </div>
+                                </div>
+                                <div class="margin-bottom-30">
+                                    <i class="icon-custom rounded-x icon-sm icon-bg-u icon-bubbles"></i>
+                                    <div class="service-desc">
+                                        <h2>业内口碑最佳</h2>
+                                        <p>多年以来,从未花钱做广告,均靠学生口口相传</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-6">
+                                <div class="margin-bottom-30">
+                                    <i class="icon-custom rounded-x icon-sm icon-bg-u icon-drawer"></i>
+                                    <div class="service-desc">
+                                        <h2>讲师团队最牛</h2>
+                                        <p>所有讲师均为有丰富企业实际从业经验的一线技术大牛</p>
+                                    </div>
+                                </div>
+                                <div class="margin-bottom-30">
+                                    <i class="icon-custom rounded-x icon-sm icon-bg-u icon-screen-tablet"></i>
+                                    <div class="service-desc">
+                                        <h2>学员转介绍最多</h2>
+                                        <p>70%学员来自老学员转介绍,业内做到如此高的学员转介绍率的仅此一家</p>
+                                    </div>
+                                </div>
+                                <div class="margin-bottom-30">
+                                    <i class="icon-custom rounded-x icon-sm icon-bg-u icon-directions"></i>
+                                    <div class="service-desc">
+                                        <h2>讲师最负责</h2>
+                                        <p>逼学生写项目\做作业,认真给每位学员批作业,在这里,可不是爱学不学没人管,不做作业还要罚款,不好好学还会被劝退</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+
+                <!--end 为何选择我们-->
+
+
+                <!-- 跟其它机构有什么区别-->
+                    <div class="title-v1" style="margin-top: 35px">
+                        <h2>比其它机构好在哪里?</h2>
+                        <p>IT培训市场上机构众多,质量良莠不齐,每家都说自己是最棒最牛的,结果很多学生去了无良机构没学好,钱被坑了不说,还浪费了很多时间!所以在决定报班学习时,选择一家质量可靠\讲师负责的机构是至关重要的.那么既然每家都说自己最好,广告效果都吹上了天了,<strong>莫明群众怎么才能擦亮眼睛做出正确判断可能呢? </strong> <br>
+                        俗话说,<strong>外行看热闹,内行看门道</strong>,下面就教大家几个判断标准:
+
+                    </div>
+                    <div class="row">
+                        <!--div class="col-md-6">
+                            <img class="img-responsive" src="/static/img/make-decision.jpg" alt="">
+                        </div -->
+                        <div class="col-md-6 content-boxes-v3 padding-top-20">
+                            <div class="clearfix margin-bottom-30">
+                                <i class="icon-custom icon-md rounded-x icon-bg-u icon-line icon-trophy"></i>
+                                <div class="content-boxes-in-v3">
+                                    <h2 class="heading-sm">对比课程表</h2>
+                                    <p>对于懂行的人来讲,通过课程表最容易看出哪家机构讲的内容要更深入,但小白傻傻分不清哪个课程讲的更深入,最简单的办法是找个懂行的人帮你分析一下,如果不认识懂行的人,那就加入相关技术群去问.</p>
+                                </div>
+                            </div>
+                            <div class="clearfix margin-bottom-30">
+                                <i class="icon-custom icon-md rounded-x icon-bg-u icon-line icon-directions"></i>
+                                <div class="content-boxes-in-v3">
+                                    <h2 class="heading-sm">对比讲师水平</h2>
+                                    <p>很多机构因为招不到好老师,甚至让老毕业生来讲课,这在老男孩教育是坚决禁止的,老男孩的讲师都是业内叫得出名子的知名技术大牛,但即使是大牛也不代表就能讲好课,因此所有的讲师在真正讲课前都要当很长时间的助教学习如何讲好课,在老男孩能上讲台讲课的老师都是不简单的.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 content-boxes-v3 padding-top-20">
+                            <div class="clearfix margin-bottom-30">
+                                <i class="icon-custom icon-md rounded-x icon-bg-u icon-line icon-bubbles"></i>
+                                <div class="content-boxes-in-v3">
+                                    <h2 class="heading-sm">对比口碑</h2>
+                                    <p>广告可以花钱做,软文可以雇人写,但是口碑是花钱买不来的,要想真正了解一个学校的口碑,在网上瞎看没用,网上的消息有真有假,一定要找到在这个学校学过的人亲口问一下,老男孩教育的学生遍布在互联网领域的各个公司,多打听下,肯定可以找到在这学过的学员了解一下的</p>
+                                </div>
+                            </div>
+                            <div class="clearfix margin-bottom-30">
+                                <i class="icon-custom icon-md rounded-x icon-bg-u icon-line icon-diamond"></i>
+                                <div class="content-boxes-in-v3">
+                                    <h2 class="heading-sm">对比服务保证</h2>
+                                    <p>在老男孩教育,我们不帮学生包就业,因为学习是双方的,就算你去了北大清华,不好好学的话,毕业后水平也是个渣渣,但我们跟学员做的保证是,只要你能按要求修完课程的全部知识,不满意就可以无条件退全部学费,这个是写在合同里的,不是口头承诺,敢这么搞的据我们了解,业内应该还没有.</p>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                <!--end 跟其它机构有什么区别-->
+
+            </div>
+            <!--end row-->
+        </div>
+        <!--end 下半部分container-->
+    {% endblock page-content-container %}
+    </div> <!--end page-content-container-->
+
+     <!--=== Footer Version 1 ===-->
+    <div class="footer-v1">
+        <div class="footer">
+            <div class="container">
+                <div class="row">
+                    <!-- About -->
+                    <div class="col-md-3 md-margin-bottom-40">
+                        <!--a href="index.html"><img id="logo-footer" class="footer-logo" src="assets/img/logo2-default.png" alt=""></a-->
+                        <p href="index.html"><p class="footer-logo" >Oldboy Edu</p>
+                        <p>老男孩教育,只培养技术精英!</p>
+                        <p>致力于帮更多的学员获得体面的工作和生活.</p>
+                    </div><!--/col-md-3-->
+                    <!-- End About -->
+
+                    <!-- Latest -->
+                    <div class="col-md-3 md-margin-bottom-40">
+                        <div class="posts">
+                            <div class="headline"><h2>友情连接</h2></div>
+                            <ul class="list-unstyled latest-list">
+                                <li>
+                                    <a href="https://github.com/triaquae/CrazyEye" target="_blank">CrazyEye开源软件</a>
+                                </li>
+                                <li>
+                                    <a href="http://www.cnblogs.com/wupeiqi" target="_blank">银角大王blog</a>
+                                </li>
+                                <li>
+                                    <a href="http://3060674.blog.51cto.com/" target="_blank">Alex blog</a>
+
+                                </li>
+                            </ul>
+                        </div>
+                    </div><!--/col-md-3-->
+                    <!-- End Latest -->
+
+
+                    <!-- Address -->
+                    <div class="col-md-3 map-img md-margin-bottom-40">
+                        <div class="headline"><h2>联系我们</h2></div>
+                        <address class="md-margin-bottom-40">
+                            北京市昌平区沙河顺沙路八号院2区3号楼汇德商厦4层
+                            <br />
+
+                            全国统一热线:400-800-8001 <br />
+                        </address>
+                    </div><!--/col-md-3-->
+                    <!-- End Address -->
+                    <!-- Link List -->
+                    <div class="col-md-3 md-margin-bottom-40">
+                        <div class="headline"><h2>老男孩微信公众号</h2></div>
+                        <img src="/static/img/home/weixin.jpg">
+                    </div><!--/col-md-3-->
+                    <!-- End Link List -->
+
+                </div>
+            </div>
+        </div><!--/footer-->
+
+        <div class="copyright">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6">
+                        <p>
+                            2016 &copy; All Rights Reserved.
+                           <a href="#">老男孩IT教育</a> | <a href="#">京ICP备13038099号</a>
+                        </p>
+                    </div>
+
+                </div>
+            </div>
+        </div><!--/copyright-->
+    </div>
+    <!--=== End Footer Version 1 ===-->
+</div><!--/wrapper-->
+
+{% endblock %}
+{% block bottom-js %}
+<script>
+
+</script>
+{% endblock %}

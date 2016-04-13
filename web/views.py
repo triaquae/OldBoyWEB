@@ -30,9 +30,6 @@ def about_us(request):
 def teachers(request):
     return render(request,'web/teachers.html')
 
-def course(request):
-    return render(request,'web/course.html')
-
 def jobs(request):
     return render(request,'web/jobs.html')
 
@@ -46,8 +43,6 @@ def course_linux_architect(request):
     return render(request,"web/course_linux_architect.html",{"consultant": pick_one_consultant})
 def course_py_devops(request):
     return render(request,'web/course_py_devops.html',{"consultant": utils.allowcate_consultant()})
-def course_py_ops(request):
-    return render(request,'web/course_py_ops.html',{"consultant": utils.allowcate_consultant()})
 
 def course_bigdata(request):
     return render(request,'web/course_bigdata.html',{"consultant": utils.allowcate_consultant()})

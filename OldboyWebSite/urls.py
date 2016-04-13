@@ -23,7 +23,6 @@ urlpatterns = [
     url(r'^$', views.index, name='home_page'),
     url(r'^about_us/$', views.about_us, name='about_us'),
     url(r'^teachers/$', views.teachers, name='teachers'),
-    url(r'^classse/$', views.classes, name='classes'),
     url(r'^jobs/$', views.jobs, name='jobs'),
     url(r'^course/py_devops/$', views.course_py_devops, name="course_py_devops"),
     url(r'^course/linux_ops/$', views.course_linux_ops, name="course_linux_ops"),

@@ -1683,24 +1683,3 @@ img.img-mouse {
 .team-v1 li > h3 {
 	color: #555;
 }
-
-.offor-thead {
-	color: white;
-	background-color: #1c1c1c;
-}
-.serior{
-	background-color: #fafafa;
-}
-.teacher {
-	height: 278px;
-	width: 244px;
-}
-.img-all {
-	margin-top: 10px;
-}
-.class {
-	margin-top: 10px;
-}
-.student {
-	margin-left: 35px;
-}

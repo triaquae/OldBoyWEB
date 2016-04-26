@@ -28,6 +28,7 @@ urlpatterns = [
     url(r'^course/py_devops/$', views.course_py_devops, name="course_py_devops"),
     url(r'^course/py_ops/$', views.course_py_ops, name="course_py_ops"),
     url(r'^course/linux_ops/$', views.course_linux_ops, name="course_linux_ops"),
+    url(r'^course/linux_senior/$', views.course_linux_senior, name="linux_senior"),
     url(r'^course/linux_architect/$', views.course_linux_architect, name="linux_architect"),
     url(r'^course/bigdata/$', views.course_bigdata, name="bigdata"),
     url(r'^course/enrollment/$', views.how_to_enroll, name="how_to_enroll"),

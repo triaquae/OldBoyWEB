@@ -1,16 +1,16 @@
 {% extends 'web/index.html' %}
 
 {% block page-content-container %}
-<div class="parallaxBg " style="background-position: 50% 16px;"
+<div class="course-bg-img parallaxBg " style="background-position: 50% 16px;"
      xmlns="http://www.w3.org/1999/html">
+  <div class="container container-below-navbar">
+      <div class="col-md-10  " >
 
-
-</div>
-<div class="container " style="margin-left: -250px;">
-      <div class="col-lg-12" >
-        <img src="/static/img/banner/01.png">
       </div>
   </div>
+
+</div>
+
 <!--=== Content Part ===-->
 <div class="container content  gray-bg">
     <!-- 脱产课程-->
@@ -18,50 +18,58 @@
     <div class="row">
         <div class="col-lg-4">
             <div class="classes-png">
-              <img src="/static/img/class/linux_ops.png">
-              <p>linux运维课程</p>
-            </div>
-
-        </div>
-        <div class="col-lg-4">
-            <div class="classes-png">
-                <a href="{% url 'course_py_ops' %}">
+                <a href="{% url 'course_linux_ops' %}">
                     <img src="/static/img/class/python.png">
-                    <p>Python自动化运维开发</p>
+                    <p>Liunx中高级</p>
                 </a>
             </div>
-
         </div>
         <div class="col-lg-4">
             <div class="classes-png">
-              <img src="/static/img/class/linux_ops.png">
-              <p>linux运维课程</p>
+                <a href="{% url 'course_py_devops' %}">
+                    <img src="/static/img/class/python.png">
+                    <p>Python自动化全栈开发</p>
+                </a>
             </div>
-
         </div>
-
-
+        <div class="col-lg-4">
+            <div class="classes-png">
+                <a href="{% url 'bigdata' %}">
+                    <img src="/static/img/class/python.png">
+                    <p>大数据课程</p>
+                </a>
+            </div>
+        </div>
     </div>
+
     <!--end 脱产课程-->
     <!-- 周末课程-->
     <h2 class="classes-braner">&nbsp&nbsp&nbsp周末课程</h2>
     <div class="row">
+
         <div class="col-lg-4">
             <div class="classes-png">
-              <img src="/static/img/class/linux_ops.png">
-            <p>linux运维课程</p>
+
+                <a href="{% url 'course_linux_ops' %}">
+                    <img src="/static/img/class/linux_ops.png">
+                </a>
+                <p>linux运维课程</p>
+            </div>
+        </div>
+         <div class="col-lg-4">
+            <div class="classes-png">
+                <a href="{% url 'linux_architect' %}">
+                    <img src="/static/img/class/python.png">
+                    <p>系统架构</p>
+                </a>
             </div>
         </div>
         <div class="col-lg-4">
             <div class="classes-png">
-              <img src="/static/img/class/linux_ops.png">
-            <p>linux运维课程</p>
-            </div>
-        </div>
-        <div class="col-lg-4">
-            <div class="classes-png">
-              <img src="/static/img/class/linux_ops.png">
-            <p>linux运维课程</p>
+                <a href="{% url 'course_py_ops' %}">
+                    <img src="/static/img/class/linux_ops.png">
+                </a>
+                <p>Python自动化运维</p>
             </div>
         </div>
     </div>

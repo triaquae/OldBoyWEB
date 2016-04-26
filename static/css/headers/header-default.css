@@ -1097,6 +1097,8 @@ body.header-fixed-space-default {
 .header-top{
 	height: 30px;
 	background-color: rgba(105, 105, 105, 0.48);
+	margin-left: 0;
+	margin-right: 0;
 }
 .header-top p{
 	height: 100%;
@@ -1116,6 +1118,6 @@ body.header-fixed-space-default {
 	min-width: 1200px;
 }
 .header-top-1 .logo img{
-	margin-top: -6px;
+	margin-top: -5px;
 	height: 70px;
 }

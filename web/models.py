@@ -50,6 +50,7 @@ class NewGraduates(models.Model):
     def __unicode__(self):
         return self.course_name
 
+
 class Consultants(models.Model):
     qq = models.IntegerField(u"qq",unique=True)
     name = models.CharField(u"招生老师姓名",max_length=32)
@@ -63,3 +64,6 @@ class Consultants(models.Model):
 
     def __unicode__(self):
         return self.name
+
+class offor(models.Model):
+    name = models.CharField(max_length=100)

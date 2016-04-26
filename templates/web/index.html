@@ -6,88 +6,88 @@
 <div class="wrapper">
     <!--=== Header Top ===-->
     <div class="row header-top">
-        <div class="col-lg-6">
-            <div class="col-lg-2">
-            </div>
-            <div class="col-lg-10">
-                <p>专注运维领域11年-铸就中国精英Linux运维培训第一品牌</p>
+        <div class="col-md-6">
+            <div class="row">
+                <div class="col-lg-2">
+                </div>
+                <div class="col-lg-10">
+                    <p>专注运维领域11年-铸就中国精英Linux运维培训第一品牌</p>
+                </div>
             </div>
         </div>
-        <div class="col-lg-6">
-            <div class="col-lg-3"></div>
-            <div class="col-lg-9 header-top-left">
-                <a>报名流程 |</a>
-                <a>常见问题 |</a>
-                <a>在线咨询 |</a>
-                <a>联系我们 |</a>
-                <a>关于我们</a>
+        <div class="col-md-6">
+            <div class="row">
+                <div class="col-lg-3"></div>
+                <div class="col-lg-9 header-top-left">
+                    <a>报名流程 |</a>
+                    <a>常见问题 |</a>
+                    <a>在线咨询 |</a>
+                    <a>联系我们 |</a>
+                    <a>关于我们</a>
+                </div>
             </div>
         </div>
     </div>
-     <!--===end Header Top ===-->
-    <div class="container ">
-        <div class="row header-top-1" >
-            <!-- Logo -->
+    <!--===end Header Top ===-->
+
+    <!-- 首页导航栏 -->
+    <div class="container "><!--container-->
+        <div class="row header-top-1"><!--row-->
             <div class="col-lg-2">
-                <a class="logo"  href="index.html">
-                    <img  style="margin: 0 0;margin-left: -8px;height: 50px" src="/static/img/logo/logo_gray.png" alt="Logo">
+                <a class="logo" href="index.html">
+                    <img style="margin: 0 0;margin-left: -8px;height: 50px" src="/static/img/logo/logo_gray.png" alt="Logo">
                 </a>
             </div>
             <div class="col-lg-7">
-                        <ul class="nav navbar-nav  ">
+                <ul class="nav navbar-nav  ">
 
-                            <li class="page-scroll">
-                                <a href="{% url 'home_page' %}">
-                                    <span data-hover="About">网站首页</span>
-                                </a>
-                            </li>
-                            <!-- 课程中心 -->
-                            <li class="page-scroll">
-                                <a href="{% url 'course' %}">
-                                    课程中心
-                                </a>
-                            </li>
-                            <!-- End 课程中心 -->
-                            <!-- 师资中心 -->
-                            <li class="dropdown">
-                                <a href="javascript:void(0);" class="dropdown-toggle" data-toggle="dropdown">
-                                    师资中心
-                                </a>
-                            </li>
-                            <!-- End 师资中心 -->
+                    <li class="page-scroll">
+                        <a href="{% url 'home_page' %}">
+                            <span data-hover="About">网站首页</span>
+                        </a>
+                    </li>
+                    <!-- 课程中心 -->
+                    <li class="page-scroll">
+                        <a href="{% url 'course' %}">
+                            课程中心
+                        </a>
+                    </li>
+                    <!-- End 课程中心 -->
+                    <!-- 师资中心 -->
+                    <li class="dropdown">
+                        <a href="{% url 'teachers' %}">
+                            师资中心
+                        </a>
+                    </li>
+                    <!-- End 师资中心 -->
 
-                            <!-- 技术社区 -->
-                            <li class="page-scroll">
-                                <a href="{% url 'teachers' %}" >
-                                    技术社区
-                                </a>
+                    <!-- 技术社区 -->
+                    <li class="page-scroll">
+                        <a href=>
+                            技术社区
+                        </a>
 
-                            </li>
-                            <!-- End 技术社区 -->
-                            <!-- 网络学习中心 -->
-                            <li class="page-scroll">
-                                <a href="{% url 'jobs' %}" >
-                                    网络学习中心
-                                </a>
-                            </li>
-                            <!-- End 网络学习中心 -->
+                    </li>
+                    <!-- End 技术社区 -->
+                    <!-- 网络学习中心 -->
+                    <li class="page-scroll">
+                        <a href="{% url 'jobs' %}">
+                            网络学习中心
+                        </a>
+                    </li>
+                    <!-- End 网络学习中心 -->
 
 
-
-                        </ul>
-                    </div>
-            <div class="col-lg-3 logo">
-                <img src="/static/img/head-1.png">
+                </ul>
             </div>
-
-        <div><!--/end row-->
-
+            <div class="col-lg-3 logo">
+            <img src="/static/img/head-1.png">
+        </div>
+        </div><!--/end row-->
     </div><!--/end container-->
-
-    <!--=== End Header ===-->
+    <!-- 首页导航栏 -->
 
     <!--在线咨询框-->
-
     <i class="style-switcher-btn fa fa-user hidden-xs online-consule-btn "  style="top:200px;background:#e74c3c"> 在线咨询</i>
     <div class="style-switcher animated fadeInRight" style="display: block;top:200px">
         <div class="style-swticher-header">
@@ -131,13 +131,9 @@
     {% block page-content-container %}
         <!--=== Content Part ===-->
         <div class="container content ">
-
-            <div class="row blog-page container-below-navbar" >
-
+            <div class="row blog-page " >
                 <!-- Left Sidebar -->
                 <div class="col-md-9">
-
-
                      <div class="blog-img">
                             <div class="carousel slide carousel-v1" id="myCarousel"  style="margin-top: -10px">
                                 <div class="carousel-inner">
@@ -159,7 +155,6 @@
 
                                     </div>
                                 </div>
-
                                 <div class="carousel-arrow">
                                     <a data-slide="prev" href="#myCarousel" class="left carousel-control">
                                         <i class="fa fa-angle-left"></i>
@@ -492,7 +487,8 @@
         </div><!--/container-->
         <!--=== End Content Part ===-->
     {% endblock page-content-container %}
-    </div> <!--end page-content-container-->
+    </div>
+        <!--end page-content-container-->
 
      <!--=== Footer Version 1 ===-->
     <div class="footer-v1">

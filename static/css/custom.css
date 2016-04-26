@@ -114,10 +114,10 @@
 }
 
 .linux-course-bg-img {
-    height: 700px;
+    height: 472px;
 	padding: 80px 0;
 	margin-bottom: 20px;
-	background: url(/static/img/course/linux_ops/linux_4.jpg)  ;
+	background: url(/static/img/course/linux_ops/linux_ops_bg.png)  ;
 
 }
 
@@ -206,6 +206,12 @@
 	padding: 80px 0;
 	margin-bottom: 20px;
 	background: url(/static/img/bg/jobs_bg2.jpg) 100% 0 repeat fixed  ;
+}
+.course-bg-img {
+    height: 700px;
+	padding: 80px 0;
+	margin-bottom: 20px;
+	background: url(/static/img/bg/enrollment_bg4.jpg) 100% 0 repeat fixed  ;
 }
 .jobs-bg-img .head_bg {
     background-color: rgba(255,255,255, 0.7);

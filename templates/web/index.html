@@ -19,11 +19,13 @@
             <div class="row">
                 <div class="col-lg-3"></div>
                 <div class="col-lg-9 header-top-left">
-                    <a>报名流程 |</a>
-                    <a>常见问题 |</a>
-                    <a>在线咨询 |</a>
-                    <a>联系我们 |</a>
-                    <a>关于我们</a>
+                    <a href="{% url 'how_to_enroll' %}">报名流程 |</a>
+                    <a href="{% url 'how_to_enroll' %}">常见问题 |</a>
+                    <a href="http://wpa.qq.com/msgrd?v=3&amp;uin=&amp;site=qq&amp;menu=yes" target="_blank">
+                    在线咨询 |
+                    </a>
+                    <a href="{% url 'about_us' %}">联系我们 |</a>
+                    <a href="{% url 'about_us' %}">关于我们</a>
                 </div>
             </div>
         </div>
@@ -34,7 +36,7 @@
     <div class="container "><!--container-->
         <div class="row header-top-1"><!--row-->
             <div class="col-lg-2">
-                <a class="logo" href="index.html">
+                <a class="logo" href="{% url 'home_page' %}">
                     <img style="margin: 0 0;margin-left: -8px;height: 50px" src="/static/img/logo/logo_gray.png" alt="Logo">
                 </a>
             </div>
@@ -63,7 +65,7 @@
 
                     <!-- 技术社区 -->
                     <li class="page-scroll">
-                        <a href=>
+                        <a href="http://oldboy.blog.51cto.com/">
                             技术社区
                         </a>
 
@@ -71,7 +73,7 @@
                     <!-- End 技术社区 -->
                     <!-- 网络学习中心 -->
                     <li class="page-scroll">
-                        <a href="{% url 'jobs' %}">
+                        <a href="http://edu.51cto.com/training/training_id-24.html?www1">
                             网络学习中心
                         </a>
                     </li>
@@ -496,52 +498,50 @@
             <div class="container">
                 <div class="row">
                     <!-- About -->
-                    <div class="col-md-3 md-margin-bottom-40">
+                    <div class="col-md-2 md-margin-bottom-40">
                         <!--a href="index.html"><img id="logo-footer" class="footer-logo" src="assets/img/logo2-default.png" alt=""></a-->
-                        <p href="index.html"><p class="footer-logo" >Oldboy Edu</p>
-                        <p>老男孩教育,只培养技术精英!</p>
-                        <p>致力于帮更多的学员获得体面的工作和生活.</p>
-                    </div><!--/col-md-3-->
-                    <!-- End About -->
-
-                    <!-- Latest -->
-                    <div class="col-md-3 md-margin-bottom-40">
-                        <div class="posts">
-                            <div class="headline"><h2>友情连接</h2></div>
-                            <ul class="list-unstyled latest-list">
-                                <li>
-                                    <a href="https://github.com/triaquae/CrazyEye" target="_blank">CrazyEye开源软件</a>
-                                </li>
-                                <li>
-                                    <a href="http://www.cnblogs.com/wupeiqi" target="_blank">银角大王blog</a>
-                                </li>
-                                <li>
-                                    <a href="http://3060674.blog.51cto.com/" target="_blank">Alex blog</a>
-
-                                </li>
-                            </ul>
-                        </div>
-                    </div><!--/col-md-3-->
-                    <!-- End Latest -->
-
-
-                    <!-- Address -->
-                    <div class="col-md-3 map-img md-margin-bottom-40">
-                        <div class="headline"><h2>联系我们</h2></div>
-                        <address class="md-margin-bottom-40">
-                            北京市昌平区沙河顺沙路八号院2区3号楼汇德商厦4层
-                            <br />
-
-                            全国统一热线:400-800-8001 <br />
-                        </address>
-                    </div><!--/col-md-3-->
-                    <!-- End Address -->
-                    <!-- Link List -->
-                    <div class="col-md-3 md-margin-bottom-40">
-                        <div class="headline"><h2>老男孩微信公众号</h2></div>
+                        <p class="footer-logo" >课程设置</p>
+                        <p><a href="{% url 'course_linux_ops' %}">Linux运维</a></p>
+                        <p><a href="{% url 'course_py_devops' %}">Python开发</a></p>
+                        <p><a href="{% url 'linux_architect' %}">系统架构</a></p>
+                        <p><a href="{% url 'bigdata' %}">大数据课程</a></p>
+                    </div><!--/col-md-2-->
+                    <div class="col-md-2 md-margin-bottom-40">
+                        <!--a href="index.html"><img id="logo-footer" class="footer-logo" src="assets/img/logo2-default.png" alt=""></a-->
+                        <p class="footer-logo" >学习资源</p>
+                        <p><a href="http://edu.51cto.com/training/training_id-24.html?www1">自学教程</a></p>
+                        <p><a href="http://edu.51cto.com/training/training_id-24.html?www1">在线课程</a></p>
+                        <p><a href="http://oldboy.blog.51cto.com/">技术博客</a></p>
+                    </div><!--/col-md-2-->
+                    <div class="col-md-2 md-margin-bottom-40">
+                        <!--a href="index.html"><img id="logo-footer" class="footer-logo" src="assets/img/logo2-default.png" alt=""></a-->
+                        <p class="footer-logo" >社区热点</p>
+                        <p><a>最新就业</a></p>
+                        <p><a>学校活动</a></p>
+                        <p><a>学员心声</a></p>
+                        <p><a>开班信息</a></p>
+                    </div><!--/col-md-2-->
+                    <div class="col-md-2 md-margin-bottom-40">
+                        <!--a href="index.html"><img id="logo-footer" class="footer-logo" src="assets/img/logo2-default.png" alt=""></a-->
+                        <p class="footer-logo" >关于我们</p>
+                        <p><a>老男孩介绍</a></p>
+                        <p><a>加入老男孩</a></p>
+                        <p><a>联系老男孩</a></p>
+                    </div><!--/col-md-2-->
+                    <div class="col-md-2 md-margin-bottom-40">
+                        <!--a href="index.html"><img id="logo-footer" class="footer-logo" src="assets/img/logo2-default.png" alt=""></a-->
+                        <p class="footer-logo" >新手指南</p>
+                        <p><a>如何报名</a></p>
+                        <p><a>报名流程</a></p>
+                        <p><a>常见问题</a></p>
+                    </div><!--/col-md-2-->
+                    <div class="col-md-2">
+                        <p class="footer-logo" >老男孩微信公众号</p>
                         <img src="/static/img/home/weixin.jpg">
                     </div><!--/col-md-3-->
-                    <!-- End Link List -->
+
+
+
 
                 </div>
             </div>

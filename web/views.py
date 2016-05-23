@@ -12,8 +12,17 @@ def index(request):
     school_news = news_obj.filter(category__in=('good_news', 'school_news')).order_by("priority")[:5]
     new_classes = news_obj.filter(category="news_class").order_by("priority")[:5]
     stu_dairy = news_obj.filter(category="stu_dairy").order_by("priority")[:10]
+    net_clases = news_obj.filter(category="net_class").order_by("priority")[:10]
+    senior_dairy = news_obj.filter(category="senior_dairy").order_by("priority")[:10]
     recent_public_classes = models.PublicClass.objects.all().order_by("start_date")[:4]
     recent_graduates = models.NewGraduates.objects.all().order_by("graduate_date")[:4]
+    offors = models.Offor.objects.all().order_by('-time')[:10]
+
+    img_banner = models.ImageLink.objects.filter(type=1).order_by("priority")[0:4]
+    img_class = models.ImageLink.objects.filter(type=2).order_by("priority")[0:3]
+    img_teacher = models.ImageLink.objects.filter(type=3).order_by("priority")[0:3]
+    img_netclass = models.ImageLink.objects.filter(type=4).order_by("priority")[0:3]
+    img_student = models.ImageLink.objects.filter(type=5).order_by("priority")[0:3]
 
     pick_one_consultant = utils.allowcate_consultant()
     return render(request, 'web/index.html', {"school_news": school_news,
@@ -21,7 +30,15 @@ def index(request):
                                               "stu_dairy": stu_dairy,
                                               "recent_public_classes": recent_public_classes,
                                               "recent_graduates": recent_graduates,
-                                              "consultant": pick_one_consultant
+                                              "consultant": pick_one_consultant,
+                                              "senior_dairys": senior_dairy,
+                                              "net_clases": net_clases,
+                                              "offors": offors,
+                                              "img_banner": img_banner,
+                                              "img_class": img_class,
+                                              "img_netclass": img_netclass,
+                                              "img_teacher": img_teacher,
+                                              "img_student": img_student,
                                               })
 
 
@@ -34,7 +51,8 @@ def teachers(request):
 
 
 def course(request):
-    return render(request, 'web/course.html')
+    net_courses = models.ImageLink.objects.filter(type=6).order_by("priority")[0:2]
+    return render(request, 'web/course.html', {"net_courses": net_courses})
 
 
 def jobs(request):

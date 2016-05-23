@@ -81,24 +81,16 @@
     <!--网络课程-->
     <h2 class="classes-braner">&nbsp&nbsp&nbsp网络课程</h2>
     <div class="row">
-        <div class="col-lg-4">
-            <div class="classes-png">
-              <img src="/static/img/class/linux_ops.png">
-            <p>linux运维课程</p>
-            </div>
-        </div>
-        <div class="col-lg-4">
-            <div class="classes-png">
-              <img src="/static/img/class/linux_ops.png">
-            <p>linux运维课程</p>
-            </div>
-        </div>
-        <div class="col-lg-4">
-            <div class="classes-png">
-              <img src="/static/img/class/linux_ops.png">
-            <p>linux运维课程</p>
-            </div>
-        </div>
+        {% for net_course in net_courses %}
+          <div class="col-lg-4">
+              <div class="classes-png">
+                <a href="{{ net_course.link }}">
+                  <img src="/{{ net_course.img }}">
+                </a>
+                <p>{{ net_course.title }}</p>
+              </div>
+          </div>
+        {% endfor %}
     </div>
     <!-- end 网络课程-->
 
